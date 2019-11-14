@@ -1,0 +1,65 @@
+.main-header {
+	background-color: $background-decor;
+}
+
+@media (min-width: 1600px) {
+	.main-header {
+		position: relative;
+		padding-top: 66px;
+		padding-left: 216px;
+		padding-right: 100px;
+		padding-bottom: 33px;
+		color: $white;
+		background-image: url("../img/background-header-1600.jpg");
+		background-repeat: no-repeat;
+		background-size: 1772px 907px;
+		background-position: 0px -7px;
+	}
+
+	.main-header__block-wrap {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.main-header__logo {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+
+	.main-header__logo img {
+		margin-right: 9px;
+	}
+
+	.main-header__logo p {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 32px;
+		text-transform: uppercase;
+	}
+
+	.main-header__title {
+		margin-top: 270px;
+		margin-bottom: 38px;
+	}
+
+	.main-header__greeting {
+		margin-bottom: 49px;
+		@include font-base(20px, 32px);
+		color: $white;
+		font-weight: 400;
+		letter-spacing: 0.1px;
+	}
+
+	.main-header__btn {
+		margin-bottom: 196px;
+		color: #2b2d5c;
+		font-size: 16px;
+		text-transform: capitalize;
+	}
+
+	.main-header__social-block {
+		margin-left: auto;
+	}
+}

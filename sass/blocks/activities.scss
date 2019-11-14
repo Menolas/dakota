@@ -1,0 +1,51 @@
+.activities__list {
+	@include list-style;
+	display: flex;
+}
+
+@media (min-width: 1600px) {
+	.activities {
+		margin-bottom: 59px;
+	}
+
+	.activities__title {
+		margin-bottom: 38px;
+
+	}
+
+  .activities__list {
+  	flex-direction: row;
+  }
+
+  .activities__item {
+  	margin-right: 172px;
+
+  	&:last-of-type {
+  		margin-right: 0;
+  	}
+  }
+
+  .activities__link {
+  	@include link-style;
+  	position: relative;
+  }
+
+  .activities__link-title {
+  	margin-bottom: 20px;
+  	font-weight: 400;
+  	line-height: 38px;
+  	text-transform: uppercase;
+  }
+
+  .activities__description {
+  	display: none;
+  }
+
+  .activities__description--shown {
+  	position: absolute;
+  	left: 76px;
+  	top: 39px;
+  	width: 200px;
+  	background-color: transparent;
+  }
+}

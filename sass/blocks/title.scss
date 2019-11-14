@@ -1,0 +1,14 @@
+@media (min-width: 1600px) {
+	.title {
+		@include font-header(60px, 72px);
+	}
+
+	.title__secondary {
+		@include font-header(40px, 76px);
+	}
+
+	.title__third {
+		@include font-header(26px, 38px);
+		font-weight: 300;
+	}
+}

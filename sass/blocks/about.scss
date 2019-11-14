@@ -1,0 +1,37 @@
+.about__content-wrap {
+	background-color: $background-color;
+}
+
+.about__title {
+	color: #2b2d5c;
+}
+
+@media (min-width: 1600px) {
+	.about {
+		position: relative;
+		padding-bottom: 149px;
+	}
+
+	.about__illustration {
+		position: absolute;
+		top: 99px;
+		left: 0;
+		width: 515px;
+		height: 730px;
+	}
+
+	.about__content-wrap {
+		padding-top: 164px;
+		padding-left: 651px;
+		padding-right: 215px;
+		padding-bottom: 50px;
+	}
+
+	.about__title {
+		margin-bottom: 30px;
+	}
+
+	.about__text {
+		margin-bottom: 39px;
+	}
+}
