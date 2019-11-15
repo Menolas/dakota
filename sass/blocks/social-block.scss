@@ -1,3 +1,21 @@
+.social-block__list {
+    @include list-style;
+    display: flex;
+}
+
+.social-block__link {
+		@include link-style;
+		font-size: 0;
+		width: 23px;
+		height: 23px;
+}
+
+.social-block__link svg {
+		width: 23px;
+		height: 23px;
+		fill: $white;
+	}
+
 @media (min-width: 1600px) {
 	.social-block__list {
     @include list-style;
@@ -7,18 +25,5 @@
 
 	.social-block__item {
 		margin-left: 20px;
-	}
-
-	.social-block__link {
-		@include link-style;
-		font-size: 0;
-		width: 23px;
-		height: 23px;
-	}
-
-	.social-block__link svg {
-		width: 23px;
-		height: 23px;
-		fill: $white;
 	}
 }
