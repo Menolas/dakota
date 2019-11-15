@@ -6,6 +6,13 @@
 	color: #2b2d5c;
 }
 
+.about__btn {
+	color: #fefeff;
+	text-transform: uppercase;
+	font-family: $base-font-family;
+	background-color: $background-decor;
+}
+
 @media (min-width: 1600px) {
 	.about {
 		position: relative;
@@ -33,5 +40,11 @@
 
 	.about__text {
 		margin-bottom: 39px;
+	}
+
+	.about__btn {
+		width: 284px;
+		font-size: 14px;
+		font-weight: 400;
 	}
 }
