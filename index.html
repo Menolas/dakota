@@ -423,8 +423,8 @@
 					</article>
 				</section>
 				<section class="contact-form">
-					<h2 class="contact-form__title  title__secondary">Let's work?</h2>
-					<form action="#" method="post">
+					<form class="contact-form__form" action="#" method="post">
+						<h2 class="contact-form__title  title__secondary">Let's work?</h2>
 						<div class="contact-form__field-wrap">
 							<input type="text" name="name" id="name">
 							<label for="name"><sup>*</sup>Your name</label>
@@ -433,7 +433,7 @@
 							<input type="text" name="email" id="email">
 							<label for="email"><sup>*</sup>Your Email</label>
 						</div>
-						<div class="contact-form__field-wrap">
+						<div class="contact-form__field-wrap  contact-form__field-wrap--textarea">
 							<textarea>Your Messages</textarea>
 						</div>
 						<input class="contact-form__btn  btn" type="submit" value="SEND MESSAGE">
@@ -443,47 +443,71 @@
 			</main>
 			<footer class="main-footer">
 				<div class="main-footer__logo">
-					<img src="#" width="26" height="26" alt="logo">
+					<svg><use xlink:href="#logo"></use></svg>
 					<p>Photography</p>
 				</div>
 				<section class="main-footer__contact">
 					<h4 class="main-footer__contact-title">Contact</h4>
-					<p>237 Church St, San Francisco, 
-					CA 94114, USA 
-					nazmulhasanjingar@gmail.com</p>
-					<h4>Follow me on:</h4>
-					<div class="main-footer__contact-social-block  social-block">
+					<p class="main-footer__contact-text">237 Church St, San Francisco,<br> 
+					CA 94114, USA</p>
+					<p class="main-footer__contact-email">nazmulhasanjingar@gmail.com</p>
+					<div class="main-footer__social-block  social-block">
+						<h4 class="main-footer__contact-title  main-footer__contact-title--social">Follow me on:</h4>
 						<ul class="social-block__list">
-							<li class="social-block__item">
-								<a class="social-block__link" href="#">My Facebook accaunt</a>
-							</li>
-							<li class="social-block__item">
-								<a class="social-block__link" href="#">My Twitter accaunt</a>
-							</li> 
-							<li class="social-block__item">
-								<a class="social-block__link" href="#">My Instagram accaunt</a>
-							</li>
-							<li class="social-block__item">
-								<a class="social-block__link" href="#">My Flickr accaunt</a>
-							</li>
-						</ul>
+						<li class="social-block__item">
+							<a class="social-block__link  social-block__link--facebook" href="#">
+								<svg>
+									<use xlink:href="#facebook"></use>
+								</svg>
+							    My Facebook accaunt
+						    </a>
+						</li>
+						<li class="social-block__item">
+							<a class="social-block__link  social-block__link--twitter" href="#">
+								<svg>
+									<use xlink:href="#twitter"></use>
+								</svg>
+							    My Twitter accaunt
+						    </a>
+						</li>
+						<li class="social-block__item">
+							<a class="social-block__link  social-block__link--instagram" href="#">
+								<svg>
+									<use xlink:href="#instagram"></use>
+								</svg>
+							    My Instagram accaunt
+						    </a>
+						</li>
+						<li class="social-block__item">
+							<a class="social-block__link  social-block__link--flickr" href="#">
+								<svg>
+									<use xlink:href="#flickr"></use>
+								</svg>
+								My Flickr accaunt
+							</a>
+						</li>
+					</ul>
 					</div>
 				</section>
-				<section class="footer-blog-preview">
-					<h3 class="footer-blog-preview-title  title__third">Latest Blog Posts</h3>
+				<section class="main-footer__blog-preview  footer-blog-preview">
+					<h3 class="footer-blog-preview__title  title__third">Latest Blog Posts</h3>
 					<ul class="footer-blog-preview__list">
 						<li class="footer-blog-preview__item">
 							<a class="footer-blog-preview__link" href="#">
-								<img src="#" alt="blog post miniature">
-								<p class="footer-blog-preview__text">Design is the method of putting form and content together.</p>
-								<p class="footer-blog-preview__date"><span>Life style</span> - July 3, 2017</p>
+								<img src="img/footer-blog-1.jpg" alt="blog post miniature">
+								<div class="footer-blog-preview__content-wrap">
+									<p class="footer-blog-preview__text">Design is the method of putting form and content together.</p>
+									<p class="footer-blog-preview__date"><span>Life style</span> - July 3, 2017</p>
+								</div>
 							</a>
 						</li>
 						<li class="footer-blog-preview__item">
 							<a class="footer-blog-preview__link" href="#">
-								<img src="#" alt="blog post miniature">
-								<p class="footer-blog-preview__text">Design is the method of putting form and content together.</p>
-								<p class="footer-blog-preview__date"><span>Life style</span> - July 3, 2017</p>
+								<img src="img/footer-blog-2.jpg" alt="blog post miniature">
+								<div class="footer-blog-preview__content-wrap">
+									<p class="footer-blog-preview__text">Design is the method of putting form and content together.</p>
+									<p class="footer-blog-preview__date"><span>Life style</span> - July 3, 2017</p>
+								</div>
 							</a>
 						</li>
 					</ul>

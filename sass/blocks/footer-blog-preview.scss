@@ -1,0 +1,36 @@
+.footer-blog-preview__list {
+	@include list-style;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-row-gap: 30px;
+}
+
+.footer-blog-preview__link {
+	@include link-style;
+	display: grid;
+	grid-template-columns: 70px 265px;
+	grid-column-gap: 29px;
+	line-height: 20px;
+}
+
+.footer-blog-preview__text {
+	margin-bottom: 13px;
+}
+
+.footer-blog-preview__date {
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.footer-blog-preview__date span {
+	font-weight: 400;
+}
+
+@media (min-width: 1600px) {
+	.footer-blog-preview__title {
+		margin-bottom: 24px;
+		font-size: 24px;
+		line-height: 50px;
+		font-weight: 300;
+	}
+}
