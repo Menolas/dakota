@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0 auto;
-  @include font-base ($base-font-size, $base-line-height);
+  @include font-base (10px, 15px);
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -47,4 +47,11 @@ img {
 input,
 textarea {
   box-sizing: border-box;
+}
+
+@media (min-width: 1600px) {
+  body {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
 }

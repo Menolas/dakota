@@ -46,18 +46,6 @@
   font-weight: 300;
   src: url("../fonts/Trirong/Trirong-Light.ttf") format("truetype"); }
 
-@font-face {
-  font-family: "Trirong";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Trirong/Trirong-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Trirong";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Trirong/Trirong-Light.ttf") format("truetype"); }
-
 /* font-styles */
 /* colors */
 /** {
@@ -68,8 +56,8 @@ html {
 
 body {
   margin: 0 auto;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 10px;
+  line-height: 15px;
   font-weight: 300;
   color: #595666;
   font-family: "Muli"; }
@@ -103,6 +91,11 @@ img {
 input,
 textarea {
   box-sizing: border-box; }
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 16px;
+    line-height: 28px; } }
 
 .container {
   margin: 0 auto;
@@ -275,13 +268,28 @@ textarea {
     margin-bottom: 196px;
     font-size: 16px; } }
 
+.about__illustration {
+  display: none; }
+
 .about__content-wrap {
-  background-color: #f7f7fc; }
+  background-color: #f7f7fc;
+  padding: 44px 30px; }
 
 .about__title {
+  margin-bottom: 8px;
+  text-align: center;
   color: #2b2d5c; }
 
+.about__text {
+  margin-bottom: 20px;
+  text-align: center; }
+
 .about__btn {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  width: 80%;
   color: #fefeff;
   text-transform: uppercase;
   font-family: "Muli";
@@ -292,54 +300,68 @@ textarea {
     position: relative;
     padding-bottom: 149px; }
   .about__illustration {
+    display: block;
     position: absolute;
     top: 99px;
     left: 0;
     width: 515px;
     height: 730px; }
   .about__content-wrap {
-    padding-top: 164px;
+    padding-top: 154px;
     padding-left: 651px;
     padding-right: 215px;
     padding-bottom: 50px; }
   .about__title {
     margin-bottom: 30px; }
   .about__text {
-    margin-bottom: 39px; }
+    margin-bottom: 39px;
+    text-align: left; }
   .about__btn {
     width: 284px;
     font-size: 14px;
     font-weight: 400; } }
 
+.activities__title {
+  margin-bottom: 8px;
+  text-align: center;
+  color: #2b2d5c; }
+
 .activities__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.activities__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  position: relative; }
+
+.activities__link-title {
+  margin-bottom: 3px;
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.activities__description {
+  display: none; }
 
 @media (min-width: 1600px) {
   .activities {
     margin-bottom: 59px; }
   .activities__title {
-    margin-bottom: 38px; }
-  .activities__list {
-    flex-direction: row; }
+    margin-bottom: 38px;
+    text-align: left; }
   .activities__item {
     margin-right: 172px; }
     .activities__item:last-of-type {
       margin-right: 0; }
-  .activities__link {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    position: relative; }
   .activities__link-title {
     margin-bottom: 20px;
-    font-weight: 400;
-    line-height: 38px;
-    text-transform: uppercase; }
-  .activities__description {
-    display: none; }
+    font-size: 16px;
+    line-height: 38px; }
   .activities__description--shown {
     position: absolute;
     left: 76px;

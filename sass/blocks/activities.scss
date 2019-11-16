@@ -1,6 +1,29 @@
+.activities__title {
+	margin-bottom: 8px;
+	text-align: center;
+	color: $background-decor;
+}
+
 .activities__list {
 	@include list-style;
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.activities__link {
+	@include link-style;
+	position: relative;
+}
+
+.activities__link-title {
+	margin-bottom: 3px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.activities__description {
+	display: none;
 }
 
 @media (min-width: 1600px) {
@@ -10,13 +33,9 @@
 
 	.activities__title {
 		margin-bottom: 38px;
-
+    text-align: left;
 	}
-
-  .activities__list {
-  	flex-direction: row;
-  }
-
+  
   .activities__item {
   	margin-right: 172px;
 
@@ -25,20 +44,10 @@
   	}
   }
 
-  .activities__link {
-  	@include link-style;
-  	position: relative;
-  }
-
   .activities__link-title {
   	margin-bottom: 20px;
-  	font-weight: 400;
+  	font-size: 16px;
   	line-height: 38px;
-  	text-transform: uppercase;
-  }
-
-  .activities__description {
-  	display: none;
   }
 
   .activities__description--shown {

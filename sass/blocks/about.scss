@@ -1,12 +1,29 @@
+.about__illustration {
+	display: none;
+}
+
 .about__content-wrap {
 	background-color: $background-color;
+	padding: 44px 30px;
 }
 
 .about__title {
-	color: #2b2d5c;
+	margin-bottom: 8px;
+	text-align: center;
+	color: $background-decor;
+}
+
+.about__text {
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .about__btn {
+	margin: 0 auto;
+	margin-top: 20px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	width: 80%;
 	color: #fefeff;
 	text-transform: uppercase;
 	font-family: $base-font-family;
@@ -20,6 +37,7 @@
 	}
 
 	.about__illustration {
+		display: block;
 		position: absolute;
 		top: 99px;
 		left: 0;
@@ -28,7 +46,7 @@
 	}
 
 	.about__content-wrap {
-		padding-top: 164px;
+		padding-top: 154px;
 		padding-left: 651px;
 		padding-right: 215px;
 		padding-bottom: 50px;
@@ -40,6 +58,7 @@
 
 	.about__text {
 		margin-bottom: 39px;
+		text-align: left;
 	}
 
 	.about__btn {
