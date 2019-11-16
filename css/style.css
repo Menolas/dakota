@@ -370,17 +370,35 @@ textarea {
     background-color: transparent; } }
 
 .banners {
-  color: #ffffff;
-  background-color: #2b2d5c; }
+  padding-top: 25px;
+  padding-bottom: 40px; }
 
 .banners__title {
-  text-align: center; }
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2b2d5c; }
 
 .banners__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #2b2d5c;
+  background-image: url(../img/banners-background-320.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 458px 85px; }
+
+.banners__item {
+  display: none; }
+
+.banners__item--shown {
+  display: block; }
 
 .banners__link {
   display: block;
@@ -391,13 +409,15 @@ textarea {
   .banners {
     padding-top: 70px;
     padding-bottom: 83px;
-    background-image: url(../img/banners-background-1600.png); }
+    color: #ffffff;
+    background-color: #2b2d5c;
+    background-image: url(../img/banners-background-1600.png);
+    background-repeat: no-repeat; }
   .banners__title {
-    margin-bottom: 52px; }
-  .banners__list {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; } }
+    margin-bottom: 52px;
+    color: #ffffff; }
+  .banners__item {
+    display: block; } }
 
 .blog {
   display: grid;

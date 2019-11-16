@@ -1,15 +1,35 @@
 .banners {
-	color: $white;
-	background-color: $background-decor;
+	padding-top: 25px;
+	padding-bottom: 40px;
 }
 
 .banners__title {
+	margin-bottom: 20px;
 	text-align: center;
+	color: $background-decor;
 }
 
 .banners__list {
 	@include list-style;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: $background-decor;
+	background-image: url(../img/banners-background-320.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 458px 85px;
+}
+
+.banners__item {
+	display: none;
+}
+
+.banners__item--shown {
+	display: block;
 }
 
 .banners__link {
@@ -20,16 +40,18 @@
 	.banners {
 		padding-top: 70px;
 		padding-bottom: 83px;
+		color: $white;
+	  background-color: $background-decor;
 		background-image: url(../img/banners-background-1600.png);
+		background-repeat: no-repeat;
 	}
 
 	.banners__title {
 		margin-bottom: 52px;
+		color: $white;
 	}
 
-	.banners__list {
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
+	.banners__item {
+		display: block;
 	}
 }
