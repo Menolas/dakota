@@ -26,11 +26,21 @@
 	font-weight: 400;
 }
 
+.footer-blog-preview__link-to-blog {
+	@include link-style;
+	margin-left: 99px;
+	margin-top: 26px;
+	font-weight: 400;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
 @media (min-width: 1600px) {
 	.footer-blog-preview__title {
 		margin-bottom: 24px;
 		font-size: 24px;
 		line-height: 50px;
 		font-weight: 300;
+		font-family: "Muli";
 	}
 }
