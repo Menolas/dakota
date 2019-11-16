@@ -44,11 +44,18 @@
 	  background-color: $background-decor;
 		background-image: url(../img/banners-background-1600.png);
 		background-repeat: no-repeat;
+		background-size: 1600px 297px;
 	}
 
 	.banners__title {
 		margin-bottom: 52px;
 		color: $white;
+	}
+
+	.banners__list {
+		padding: 0;
+		background-image: none;
+		background-color: transparent;
 	}
 
 	.banners__item {
