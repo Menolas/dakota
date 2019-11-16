@@ -1,4 +1,33 @@
+.main-nav__toggler {
+	position: relative;
+	width: 30px;
+	height: 14px;
+}
+
+.main-nav__toggler-element {
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: $white;
+
+	&::before {
+		@include element-style(30px, 2px, $white);
+		top: 6px;
+		left: 0;
+	}
+
+	&::after {
+		@include element-style(30px, 2px, $white);
+		top: 12px;
+		left: 0;
+	}
+}
+
 .main-nav__list {
+	display: none;
+}
+
+.main-nav__list--shown {
 	@include list-style;
 	display: flex;
 }

@@ -19,6 +19,12 @@
 @font-face {
   font-family: "Muli";
   font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Muli/Muli-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
   font-weight: 600;
   src: url("../fonts/Muli/Muli-SemiBold.ttf") format("truetype"); }
 
@@ -98,10 +104,32 @@ input,
 textarea {
   box-sizing: border-box; }
 
+.container {
+  margin: 0 auto;
+  width: 320px; }
+
 @media (min-width: 1600px) {
   .container {
-    margin: 0 auto;
     width: 1600px; } }
+
+.title {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 300;
+  font-family: "Trirong"; }
+
+.title__secondary {
+  font-size: 26px;
+  line-height: 50px;
+  font-weight: 300;
+  font-family: "Trirong"; }
+
+.title__third {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  font-family: "Trirong";
+  font-weight: 300; }
 
 @media (min-width: 1600px) {
   .title {
@@ -121,6 +149,21 @@ textarea {
     font-family: "Trirong";
     font-weight: 300; } }
 
+.btn {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  width: 110px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #2b2d5c;
+  border-radius: 30px;
+  background-color: #f2c200; }
+
 @media (min-width: 1600px) {
   .btn {
     display: block;
@@ -130,24 +173,74 @@ textarea {
     padding-bottom: 21px;
     width: 220px;
     text-align: center;
+    font-size: 16px;
+    line-height: 30px;
     border-radius: 30px;
     background-color: #f2c200; } }
 
 .main-header {
   position: relative;
+  padding: 15px 20px;
   color: #ffffff;
-  background-color: #2b2d5c; }
+  background-color: #2b2d5c;
+  background-image: url("../img/background-header-320.jpg");
+  background-repeat: no-repeat;
+  background-size: 479px 245px;
+  background-position: -50px -3px; }
+
+.main-header__block-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
 
 .main-header__logo {
   display: flex;
   flex-direction: row;
   align-items: baseline; }
 
+.main-header__logo p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase; }
+
 .main-header__logo svg {
-  margin-right: 9px;
-  width: 26px;
-  height: 26px;
+  margin-right: 6px;
+  width: 16px;
+  height: 16px;
   fill: #ffffff; }
+
+.main-header__title {
+  display: none; }
+
+.main-header__title--mobile {
+  display: block; }
+
+.main-header__greeting {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #595666;
+  font-family: "Muli";
+  display: none;
+  margin-bottom: 29px;
+  font-weight: 400;
+  letter-spacing: 0.1px; }
+
+.main-header__greeting--mobile {
+  display: block; }
+
+.main-header__social-block {
+  display: grid;
+  margin-left: auto; }
+
+.main-header__social-block .social-block__list {
+  justify-content: flex-end; }
+
+.main-header__btn {
+  margin-bottom: 15px;
+  text-transform: capitalize; }
 
 @media (min-width: 1600px) {
   .main-header {
@@ -156,18 +249,15 @@ textarea {
     padding-right: 100px;
     padding-bottom: 33px;
     background-image: url("../img/background-header-1600.jpg");
-    background-repeat: no-repeat;
     background-size: 1772px 907px;
     background-position: 0 -7px; }
-  .main-header__block-wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
   .main-header__logo p {
     font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    text-transform: uppercase; }
+    line-height: 32px; }
+  .main-header__logo svg {
+    margin-right: 9px;
+    width: 26px;
+    height: 26px; }
   .main-header__title {
     margin-top: 270px;
     margin-bottom: 38px; }
@@ -183,14 +273,7 @@ textarea {
     letter-spacing: 0.1px; }
   .main-header__btn {
     margin-bottom: 196px;
-    color: #2b2d5c;
-    font-size: 16px;
-    text-transform: capitalize; }
-  .main-header__social-block {
-    display: grid;
-    margin-left: auto; }
-  .main-header__social-block .social-block__list {
-    justify-content: flex-end; } }
+    font-size: 16px; } }
 
 .about__content-wrap {
   background-color: #f7f7fc; }
@@ -649,7 +732,39 @@ textarea {
   color: inherit;
   text-decoration: none; }
 
+.main-nav__toggler {
+  position: relative;
+  width: 30px;
+  height: 14px; }
+
+.main-nav__toggler-element {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff; }
+  .main-nav__toggler-element::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 6px;
+    left: 0; }
+  .main-nav__toggler-element::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 12px;
+    left: 0; }
+
 .main-nav__list {
+  display: none; }
+
+.main-nav__list--shown {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -804,29 +919,41 @@ textarea {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
+
+.social-block__item {
+  margin-left: 9px; }
+  .social-block__item:first-of-type {
+    margin-left: 0; }
 
 .social-block__link {
   display: block;
   color: inherit;
   text-decoration: none;
   font-size: 0;
-  width: 23px;
-  height: 23px; }
+  width: 18px;
+  height: 18px; }
+  .social-block__link--facebook {
+    width: 11px; }
 
 .social-block__link svg {
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
   fill: #ffffff; }
 
 @media (min-width: 1600px) {
-  .social-block__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row; }
   .social-block__item {
     margin-left: 20px; }
     .social-block__item:first-of-type {
-      margin-left: 0; } }
+      margin-left: 0; }
+  .social-block__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0;
+    width: 23px;
+    height: 23px; }
+  .social-block__link svg {
+    width: 23px;
+    height: 23px; } }

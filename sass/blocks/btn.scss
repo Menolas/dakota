@@ -1,3 +1,17 @@
+.btn {
+	@include link-style;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	width: 110px;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 16px;
+	color: $background-decor;
+	border-radius: 30px;
+  background-color: $yellow;
+}
+
 @media (min-width: 1600px) {
 	.btn {
 		@include link-style;
@@ -5,6 +19,8 @@
 		padding-bottom: 21px;
 		width: 220px;
 		text-align: center;
+    font-size: 16px;
+    line-height: 30px;
 		border-radius: 30px;
     background-color: $yellow;
   }

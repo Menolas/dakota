@@ -1,20 +1,73 @@
 .main-header {
 	position: relative;
+	padding: 15px 20px;
 	color: $white;
 	background-color: $background-decor;
+	background-image: url("../img/background-header-320.jpg");
+	background-repeat: no-repeat;
+	background-size: 479px 245px;
+	background-position: -50px -3px;
+}
+
+.main-header__block-wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .main-header__logo {
-		display: flex;
-		flex-direction: row;
-		align-items: baseline;
-	}
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.main-header__logo p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	text-transform: uppercase;
+}
 
 .main-header__logo svg {
-	margin-right: 9px;
-	width: 26px;
-	height: 26px;
+	margin-right: 6px;
+	width: 16px;
+	height: 16px;
 	fill: $white;
+}
+
+.main-header__title {
+	display: none;
+}
+
+.main-header__title--mobile {
+	display: block;
+}
+
+.main-header__greeting {
+	@include font-base(16px, 22px);
+	display: none;
+	margin-bottom: 29px;
+	font-weight: 400;
+	letter-spacing: 0.1px;
+}
+
+.main-header__greeting--mobile {
+	display: block;
+}
+
+.main-header__social-block {
+	display: grid;
+	margin-left: auto;
+}
+
+.main-header__social-block .social-block__list {
+	justify-content: flex-end;
+}
+
+.main-header__btn {
+	margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
 @media (min-width: 1600px) {
@@ -23,24 +76,20 @@
 		padding-left: 216px;
 		padding-right: 100px;
 		padding-bottom: 33px;
-		
 		background-image: url("../img/background-header-1600.jpg");
-		background-repeat: no-repeat;
 		background-size: 1772px 907px;
 		background-position: 0 -7px;
 	}
 
-	.main-header__block-wrap {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-
 	.main-header__logo p {
 		font-size: 20px;
-		font-weight: 400;
 		line-height: 32px;
-		text-transform: uppercase;
+	}
+
+	.main-header__logo svg {
+		margin-right: 9px;
+		width: 26px;
+		height: 26px;
 	}
 
 	.main-header__title {
@@ -58,17 +107,6 @@
 
 	.main-header__btn {
 		margin-bottom: 196px;
-		color: #2b2d5c;
 		font-size: 16px;
-		text-transform: capitalize;
-	}
-
-	.main-header__social-block {
-		display: grid;
-		margin-left: auto;
-	}
-
-	.main-header__social-block .social-block__list {
-		justify-content: flex-end;
 	}
 }
