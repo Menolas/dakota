@@ -646,7 +646,8 @@ textarea {
     grid-template-rows: auto auto;
     grid-row-gap: 30px;
     justify-content: space-between;
-    padding: 40px 50px; }
+    padding: 40px 50px;
+    padding-bottom: 70px; }
   .blog__title {
     margin-bottom: 10px; }
   .blog__content-wrap {
@@ -755,6 +756,7 @@ textarea {
       bottom: 5px; } }
 
 .contact-form__form {
+  padding-top: 50px;
   padding-bottom: 35px;
   background-color: #2b2d5c;
   text-align: center; }
@@ -807,14 +809,7 @@ textarea {
 .contact-form__handler {
   display: none; }
 
-@media (min-width: 1600px) {
-  .contact-form {
-    padding-top: 190px; }
-  .contact-form__form {
-    padding-top: 62px;
-    padding-bottom: 73px; }
-  .contact-form__title {
-    margin-bottom: 50px; }
+@media (min-width: 768px) {
   .contact-form__field-wrap {
     margin-bottom: 26px;
     width: 500px;
@@ -836,6 +831,15 @@ textarea {
     width: 200px;
     font-size: 15px;
     line-height: 35px; } }
+
+@media (min-width: 1600px) {
+  .contact-form {
+    padding-top: 190px; }
+  .contact-form__form {
+    padding-top: 62px;
+    padding-bottom: 73px; }
+  .contact-form__title {
+    margin-bottom: 50px; } }
 
 .footer-blog-preview {
   display: none; }
