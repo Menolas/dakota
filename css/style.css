@@ -543,7 +543,7 @@ textarea {
 @media (min-width: 768px) {
   .banners {
     padding-top: 0;
-    padding-bottom: 40px; }
+    padding-bottom: 0; }
   .banners__title {
     margin-bottom: 10px; }
   .banners__list {
@@ -1160,6 +1160,25 @@ textarea {
   background-color: #ffffff;
   border: 1px solid #f2c200;
   border-radius: 26px; }
+
+@media (min-width: 768px) {
+  .portfolio {
+    grid-template-columns: 263px auto;
+    grid-template-rows: auto;
+    padding-top: 60px; }
+  .portfolio__content-wrap {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 35px; }
+  .portfolio__title {
+    margin-bottom: 10px;
+    text-align: left; }
+  .portfolio__text {
+    display: block; }
+  .portfolio__text--mobile {
+    display: none; } }
 
 @media (min-width: 1600px) {
   .portfolio {
