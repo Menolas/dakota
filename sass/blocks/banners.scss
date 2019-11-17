@@ -36,6 +36,33 @@
 	@include link-style;
 }
 
+@media (min-width: 768px) {
+	.banners {
+		padding-top: 0;
+		padding-bottom: 40px;
+	}
+
+	.banners__title {
+		margin-bottom: 10px;
+	}
+
+  .banners__list {
+  	padding: 40px 50px;
+  	height: 69px;
+  	background-image: url(../img/banners-background-768.png);
+  	background-size: 800px 149px;
+  }
+
+  .banners__item {
+		display: block;
+		margin-right: 30px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
 @media (min-width: 1600px) {
 	.banners {
 		padding-top: 70px;
