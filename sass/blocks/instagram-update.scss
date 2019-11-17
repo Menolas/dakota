@@ -3,9 +3,9 @@
 }
 
 .instagram-update__title {
-	margin-bottom: 28px;
-	font-size: 24px;
-	line-height: 38px;
+	margin-bottom: 14px;
+	font-size: 18px;
+	line-height: 26px;
 	font-weight: 300;
 	font-family: "Muli";
 }
@@ -72,4 +72,12 @@
 
 .instagram-update__link {
 	@include link-style;
+}
+
+@media (min-width: 1600px) {
+  .instagram-update__title {
+		margin-bottom: 28px;
+		font-size: 24px;
+		line-height: 38px;
+	}
 }

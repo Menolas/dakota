@@ -469,23 +469,41 @@ textarea {
 
 .blog {
   display: grid;
+  padding: 30px;
   background-color: #f7f7fc; }
 
 .blog__title {
+  margin-bottom: 20px;
   text-align: center;
   color: #2b2d5c; }
 
 .blog__text {
+  display: none;
   text-align: center;
   color: #2b2d5c; }
 
 .blog__article {
+  display: none;
   background-color: #ffffff; }
 
+.blog__article--shown {
+  display: block;
+  box-shadow: 0 0 80px 2px rgba(43, 46, 102, 0.2); }
+
+.blog__article-content-wrap {
+  padding: 18px 25px;
+  padding-bottom: 30px; }
+
 .blog__article-title {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
   color: #2b2d5c; }
 
 .blog__article-date {
+  margin-bottom: 5px;
+  font-size: 9px;
   color: #2b2d5c; }
 
 .blog__article-date span {
@@ -507,7 +525,7 @@ textarea {
     background-color: #ffcc00;
     bottom: 5px;
     left: 0;
-    opacity: 0.6; }
+    opacity: 0.5; }
 
 @media (min-width: 1600px) {
   .blog {
@@ -527,7 +545,10 @@ textarea {
   .blog__title {
     margin-bottom: 43px;
     line-height: 38px; }
+  .blog__text {
+    display: block; }
   .blog__article {
+    display: block;
     width: 450px; }
   .blog__article:first-of-type {
     grid-column-start: 1;
@@ -567,20 +588,27 @@ textarea {
   padding-top: 40px; }
 
 .contact-form__form {
+  padding-top: 30px;
+  padding-bottom: 35px;
   background-color: #2b2d5c;
   text-align: center; }
 
 .contact-form__title {
+  margin-bottom: 20px;
   text-align: center;
   color: #ffffff; }
 
 .contact-form__field-wrap {
-  position: relative; }
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 200px;
+  height: 30px; }
 
 .contact-form label {
   position: absolute;
-  left: 27px;
-  top: 0px;
+  left: 17px;
+  top: 4px;
   color: #2b2d5c;
   font-weight: 500; }
 
@@ -588,20 +616,30 @@ textarea {
 .contact-form textarea {
   margin: 0;
   padding: 0;
+  padding-left: 17px;
+  padding-top: 5px;
   width: 100%;
   height: 100%;
   color: #2b2d5c;
   border: none;
   background-color: rgba(255, 255, 255, 0.65); }
 
+.contact-form textarea {
+  padding-top: 7px; }
+
 .contact-form .contact-form__btn {
   margin: 0 auto;
+  margin-top: 25px;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  width: 120px;
   text-align: center;
   background-color: #ffcc00;
   color: #2b2d5c; }
+
+.contact-form__handler {
+  display: none; }
 
 @media (min-width: 1600px) {
   .contact-form {
@@ -612,7 +650,6 @@ textarea {
   .contact-form__title {
     margin-bottom: 50px; }
   .contact-form__field-wrap {
-    margin: 0 auto;
     margin-bottom: 26px;
     width: 500px;
     height: 45px; }
@@ -633,6 +670,9 @@ textarea {
     width: 200px;
     font-size: 15px;
     line-height: 35px; } }
+
+.footer-blog-preview {
+  display: none; }
 
 .footer-blog-preview__list {
   margin: 0;
@@ -679,6 +719,9 @@ textarea {
     font-weight: 300;
     font-family: "Muli"; } }
 
+.footer-nav {
+  display: none; }
+
 .footer-nav__title {
   margin-bottom: 28px;
   font-size: 24px;
@@ -698,6 +741,10 @@ textarea {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px; }
+
+@media (min-width: 1600px) {
+  .footer-nav {
+    display: block; } }
 
 .gallery__list {
   margin: 0;
@@ -780,9 +827,9 @@ textarea {
   width: 200px; }
 
 .instagram-update__title {
-  margin-bottom: 28px;
-  font-size: 24px;
-  line-height: 38px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 300;
   font-family: "Muli"; }
 
@@ -842,6 +889,12 @@ textarea {
   display: block;
   color: inherit;
   text-decoration: none; }
+
+@media (min-width: 1600px) {
+  .instagram-update__title {
+    margin-bottom: 28px;
+    font-size: 24px;
+    line-height: 38px; } }
 
 .main-nav__toggler {
   position: relative;
@@ -976,6 +1029,11 @@ textarea {
     font-weight: 400; } }
 
 .main-footer {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
   color: #ffffff;
   background-color: #2b2d5c; }
 
@@ -985,16 +1043,33 @@ textarea {
   align-items: baseline; }
 
 .main-footer__logo svg {
-  margin-right: 9px;
-  width: 26px;
-  height: 26px;
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
   fill: #ffffff; }
 
 .main-footer__logo p {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 22px;
   text-transform: uppercase; }
+
+.main-footer__contact-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; }
+
+.main-footer__social-block {
+  margin-top: 20px; }
+
+.main-footer__contact-title--social {
+  margin-bottom: 10px;
+  line-height: 22px; }
+
+.main-footer__copyright {
+  justify-self: center;
+  opacity: 0.25; }
 
 @media (min-width: 1600px) {
   .main-footer {
@@ -1004,7 +1079,6 @@ textarea {
     grid-row-gap: 33px;
     justify-content: space-between;
     padding-top: 95px;
-    padding-bottom: 20px;
     padding-left: 215px;
     padding-right: 215px; }
   .main-footer__logo {
@@ -1014,6 +1088,13 @@ textarea {
     grid-row-end: 1;
     align-self: start;
     margin-bottom: 39px; }
+  .main-footer__logo svg {
+    margin-right: 9px;
+    width: 26px;
+    height: 26px; }
+  .main-footer__logo p {
+    font-size: 20px;
+    line-height: 32px; }
   .main-footer__contact {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -1030,9 +1111,6 @@ textarea {
     line-height: 22px; }
   .main-footer__social-block {
     margin-top: 43px; }
-  .main-footer__contact-title--social {
-    margin-bottom: 10px;
-    line-height: 22px; }
   .main-footer__blog-preview {
     grid-column-start: 2;
     grid-column-end: 2;
@@ -1043,7 +1121,4 @@ textarea {
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: -1;
-    padding-top: 24px;
-    justify-self: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    opacity: 0.25; } }
+    padding-top: 24px; } }

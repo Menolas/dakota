@@ -1,3 +1,7 @@
+.footer-blog-preview {
+	display: none;
+}
+
 .footer-blog-preview__list {
 	@include list-style;
 	display: grid;
