@@ -11,6 +11,12 @@
 	font-weight: 300;
 }
 
+@media (min-width: 768px) {
+	.title {
+		@include font-header(30px, 35px);
+	}
+}
+
 @media (min-width: 1600px) {
 	.title {
 		@include font-header(60px, 72px);

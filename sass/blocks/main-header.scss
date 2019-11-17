@@ -6,7 +6,7 @@
 	background-image: url("../img/background-header-320.jpg");
 	background-repeat: no-repeat;
 	background-size: 370px 275px;
-	background-position: center;
+	background-position: 0 0;
 }
 
 .main-header__block-wrap {
@@ -40,11 +40,11 @@
 	display: none;
 	margin-top: 60px;
 	margin-bottom: 15px;
+	opacity: 0.8;
 }
 
 .main-header__title--mobile {
 	display: block;
-	opacity: 0.8;
 }
 
 .main-header__greeting {
@@ -73,6 +73,22 @@
 .main-header__btn {
 	margin-bottom: 15px;
   text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+	.main-header {
+		padding: 30px 50px;
+	  background-image: url("../img/background-header-768.jpg");
+	  background-size: 800px 400px;
+  }
+
+  .main-header__title {
+  	display: block;
+  }
+
+  .main-header__title--mobile {
+  	display: none;
+  }
 }
 
 @media (min-width: 1600px) {
