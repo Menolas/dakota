@@ -3,17 +3,26 @@
 }
 
 .title__secondary {
-	@include font-header(22px, 50px);
+	@include font-header(18px, 50px);
 }
 
 .title__third {
-	@include font-header(18px, 26px);
+	@include font-header(16px, 26px);
 	font-weight: 300;
 }
 
 @media (min-width: 768px) {
 	.title {
 		@include font-header(30px, 35px);
+	}
+
+	.title__secondary {
+		@include font-header(22px, 50px);
+	}
+
+	.title__third {
+		@include font-header(16px, 26px);
+		font-weight: 400;
 	}
 }
 

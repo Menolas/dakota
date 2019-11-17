@@ -49,6 +49,13 @@ textarea {
   box-sizing: border-box;
 }
 
+@media (min-width: 768px) {
+  body {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
 @media (min-width: 1600px) {
   body {
     font-size: $base-font-size;

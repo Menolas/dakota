@@ -26,6 +26,12 @@
 	display: none;
 }
 
+@media (min-width: 768px) {
+	.activities__title {
+		text-align: left;
+	}
+}
+
 @media (min-width: 1600px) {
 	.activities {
 		margin-bottom: 59px;

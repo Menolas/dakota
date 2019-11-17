@@ -30,17 +30,57 @@
 	background-color: $background-decor;
 }
 
-@media (min-width: 1600px) {
-	.about {
+@media (min-width: 768px) {
+  .about {
 		position: relative;
-		padding-bottom: 149px;
+		padding-bottom: 89px;
 	}
 
 	.about__illustration {
 		display: block;
 		position: absolute;
-		top: 99px;
+		top: 63px;
 		left: 0;
+		width: 247px;
+		height: 350px;
+		z-index: 20;
+	}
+
+	.about__content-wrap {
+		padding-top: 60px;
+		padding-left: 300px;
+		padding-right: 60px;
+		padding-bottom: 30px;
+	}
+
+	.about__title {
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	.about__text {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	.about__btn {
+		margin-left: 0;
+		margin-right: auto;
+		margin-top: 30px;
+		right: 60px;
+		top: 205px;
+		width: 200px;
+		z-index: 20;
+	}
+}
+
+@media (min-width: 1600px) {
+	.about {
+		padding-bottom: 149px;
+	}
+
+	.about__illustration {
+		top: 99px;
 		width: 515px;
 		height: 730px;
 	}

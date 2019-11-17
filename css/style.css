@@ -92,6 +92,11 @@ input,
 textarea {
   box-sizing: border-box; }
 
+@media (min-width: 768px) {
+  body {
+    font-size: 12px;
+    line-height: 18px; } }
+
 @media (min-width: 1600px) {
   body {
     font-size: 16px;
@@ -128,13 +133,13 @@ textarea {
   font-family: "Trirong"; }
 
 .title__secondary {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 50px;
   font-weight: 300;
   font-family: "Trirong"; }
 
 .title__third {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: 300;
   font-family: "Trirong";
@@ -145,7 +150,18 @@ textarea {
     font-size: 30px;
     line-height: 35px;
     font-weight: 300;
-    font-family: "Trirong"; } }
+    font-family: "Trirong"; }
+  .title__secondary {
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: 300;
+    font-family: "Trirong"; }
+  .title__third {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    font-family: "Trirong";
+    font-weight: 400; } }
 
 @media (min-width: 1600px) {
   .title {
@@ -180,19 +196,21 @@ textarea {
   border-radius: 30px;
   background-color: #f2c200; }
 
+@media (min-width: 768px) {
+  .btn {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    width: 160px;
+    font-size: 12px;
+    line-height: 22px; } }
+
 @media (min-width: 1600px) {
   .btn {
-    display: block;
-    color: inherit;
-    text-decoration: none;
     padding-top: 23px;
     padding-bottom: 21px;
     width: 220px;
-    text-align: center;
     font-size: 16px;
-    line-height: 30px;
-    border-radius: 30px;
-    background-color: #f2c200; } }
+    line-height: 30px; } }
 
 .social-block__list {
   margin: 0;
@@ -315,7 +333,9 @@ textarea {
   .main-header__title {
     display: block; }
   .main-header__title--mobile {
-    display: none; } }
+    display: none; }
+  .main-header__greeting {
+    margin-bottom: 50px; } }
 
 @media (min-width: 1600px) {
   .main-header {
@@ -377,15 +397,43 @@ textarea {
   font-family: "Muli";
   background-color: #2b2d5c; }
 
-@media (min-width: 1600px) {
+@media (min-width: 768px) {
   .about {
     position: relative;
-    padding-bottom: 149px; }
+    padding-bottom: 89px; }
   .about__illustration {
     display: block;
     position: absolute;
-    top: 99px;
+    top: 63px;
     left: 0;
+    width: 247px;
+    height: 350px;
+    z-index: 20; }
+  .about__content-wrap {
+    padding-top: 60px;
+    padding-left: 300px;
+    padding-right: 60px;
+    padding-bottom: 30px; }
+  .about__title {
+    margin-bottom: 0;
+    text-align: left; }
+  .about__text {
+    margin-bottom: 10px;
+    text-align: left; }
+  .about__btn {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 30px;
+    right: 60px;
+    top: 205px;
+    width: 200px;
+    z-index: 20; } }
+
+@media (min-width: 1600px) {
+  .about {
+    padding-bottom: 149px; }
+  .about__illustration {
+    top: 99px;
     width: 515px;
     height: 730px; }
   .about__content-wrap {
@@ -429,6 +477,10 @@ textarea {
 
 .activities__description {
   display: none; }
+
+@media (min-width: 768px) {
+  .activities__title {
+    text-align: left; } }
 
 @media (min-width: 1600px) {
   .activities {
@@ -1036,10 +1088,14 @@ textarea {
   .main-nav__toggler {
     display: none; }
   .main-nav__list {
-    display: block;
     margin: 0;
     padding: 0;
-    list-style: none; } }
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+  .main-nav__item {
+    margin-bottom: 0; } }
 
 @media (min-width: 1600px) {
   .main-nav {

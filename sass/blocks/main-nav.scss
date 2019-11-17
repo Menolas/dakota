@@ -98,8 +98,14 @@
 	}
 
 	.main-nav__list {
-		display: block;
 		@include list-style;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.main-nav__item {
+		margin-bottom: 0;
 	}
 }
 

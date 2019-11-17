@@ -12,16 +12,22 @@
   background-color: $yellow;
 }
 
+@media (min-width: 768px) {
+  .btn {
+  	padding-top: 6px;
+  	padding-bottom: 5px;
+  	width: 160px;
+  	font-size: 12px;
+  	line-height: 22px;
+  }
+}
+
 @media (min-width: 1600px) {
 	.btn {
-		@include link-style;
 		padding-top: 23px;
 		padding-bottom: 21px;
 		width: 220px;
-		text-align: center;
     font-size: 16px;
     line-height: 30px;
-		border-radius: 30px;
-    background-color: $yellow;
   }
 }

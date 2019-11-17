@@ -89,6 +89,10 @@
   .main-header__title--mobile {
   	display: none;
   }
+
+  .main-header__greeting {
+  	margin-bottom: 50px;
+  }
 }
 
 @media (min-width: 1600px) {
