@@ -99,7 +99,8 @@ textarea {
 
 .container {
   margin: 0 auto;
-  min-width: 320px; }
+  min-width: 320px;
+  max-width: 370px; }
 
 @media (min-width: 1600px) {
   .container {
@@ -196,7 +197,8 @@ textarea {
 .social-block__link svg {
   width: 18px;
   height: 18px;
-  fill: #ffffff; }
+  fill: #ffffff;
+  opacity: 0.7; }
 
 @media (min-width: 1600px) {
   .social-block__item {
@@ -221,8 +223,8 @@ textarea {
   background-color: #2b2d5c;
   background-image: url("../img/background-header-320.jpg");
   background-repeat: no-repeat;
-  background-size: 479px 245px;
-  background-position: -50px -3px; }
+  background-size: 370px 275px;
+  background-position: center; }
 
 .main-header__block-wrap {
   display: flex;
@@ -253,7 +255,8 @@ textarea {
   margin-bottom: 15px; }
 
 .main-header__title--mobile {
-  display: block; }
+  display: block;
+  opacity: 0.8; }
 
 .main-header__greeting {
   font-size: 16px;
@@ -261,10 +264,12 @@ textarea {
   font-weight: 300;
   color: #595666;
   font-family: "Muli";
+  color: #ffffff;
   display: none;
   margin-bottom: 35px;
   font-weight: 400;
-  letter-spacing: 0.1px; }
+  letter-spacing: 0.1px;
+  opacity: 0.6; }
 
 .main-header__greeting--mobile {
   display: block; }
@@ -471,6 +476,7 @@ textarea {
 
 .blog {
   display: grid;
+  justify-content: space-around;
   padding: 30px;
   padding-bottom: 60px;
   background-color: #f7f7fc; }
@@ -487,6 +493,7 @@ textarea {
 
 .blog__article {
   display: none;
+  width: 260px;
   background-color: #ffffff; }
 
 .blog__article--shown {
@@ -524,9 +531,9 @@ textarea {
     display: block;
     position: absolute;
     width: 96px;
-    height: 11px;
+    height: 8px;
     background-color: #ffcc00;
-    bottom: 5px;
+    bottom: 9px;
     left: 0;
     opacity: 0.5; }
 
@@ -585,7 +592,15 @@ textarea {
     font-size: 15px;
     line-height: 28px; }
   .blog__article-link {
-    margin-top: 25px; } }
+    margin-top: 25px; }
+    .blog__article-link::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 96px;
+      height: 11px;
+      background-color: #ffcc00;
+      bottom: 5px; } }
 
 .contact-form__form {
   padding-top: 60px;
@@ -745,6 +760,9 @@ textarea {
 @media (min-width: 1600px) {
   .footer-nav {
     display: block; } }
+
+.gallery {
+  justify-self: center; }
 
 .gallery__list {
   margin: 0;

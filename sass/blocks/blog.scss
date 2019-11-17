@@ -1,5 +1,6 @@
 .blog {
 	display: grid;
+	justify-content: space-around;
 	padding: 30px;
 	padding-bottom: 60px;
 	background-color: $background-color;
@@ -19,6 +20,7 @@
 
 .blog__article {
 	display: none;
+	width: 260px;
 	background-color: $white;
 }
 
@@ -57,8 +59,8 @@
 	line-height: 32px;
 
 	&::before {
-		@include element-style(96px, 11px, #ffcc00);
-		bottom: 5px;
+		@include element-style(96px, 8px, #ffcc00);
+		bottom: 9px;
 		left: 0;
 		opacity: 0.5;
 	}
@@ -142,5 +144,10 @@
 
   .blog__article-link {
   	margin-top: 25px;
+
+  	&::before {
+			@include element-style(96px, 11px, #ffcc00);
+			bottom: 5px;
+		}
   }
 }

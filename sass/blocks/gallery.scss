@@ -1,3 +1,7 @@
+.gallery {
+	justify-self: center;
+}
+
 .gallery__list {
 	@include list-style;
 	display: grid;
