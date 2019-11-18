@@ -74,6 +74,24 @@
 	@include link-style;
 }
 
+@media (min-width: 768px) {
+	.instagram-update {
+		grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+}
+
+@media (min-width: 1000px) {
+	.instagram-update {
+		grid-column-start: 3;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+}
+
 @media (min-width: 1600px) {
   .instagram-update__title {
 		margin-bottom: 28px;

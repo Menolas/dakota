@@ -93,9 +93,9 @@
 	}
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1000px) {
 	.contact-form {
-		padding-top: 190px;
+		padding-top: 100px;
 	}
 
 	.contact-form__form {
@@ -105,5 +105,11 @@
 
 	.contact-form__title {
 		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.contact-form {
+		padding-top: 190px;
 	}
 }

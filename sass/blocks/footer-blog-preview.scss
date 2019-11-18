@@ -2,40 +2,37 @@
 	display: none;
 }
 
-.footer-blog-preview__list {
-	@include list-style;
-	display: grid;
-	grid-template-rows: auto auto;
-}
-
-.footer-blog-preview__date span {
-	font-weight: 400;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 	.footer-blog-preview__title {
 		margin-bottom: 14px;
 		font-size: 18px;
 		line-height: 26px;
-		font-family: "muli";
+		font-family: "Muli";
 		font-weight: 300;
 	}
 
 	.footer-blog-preview__list {
+		display: grid;
+	  grid-template-rows: auto auto;
+		@include list-style;
     grid-row-gap: 20px;
 	}
 
 	.footer-blog-preview__link {
 		@include link-style;
 		display: grid;
-		grid-template-columns: 70px 175px;
-		grid-column-gap: 10px;
+		grid-template-columns: 70px 225px;
+		grid-column-gap: 19px;
 		line-height: 20px;
-	} 
+	}
+
+	.footer-blog-preview__date span {
+		font-weight: 400;
+	}
 
 	.footer-blog-preview__link-to-blog {
 		@include link-style;
-		margin-left: 80px;
+		margin-left: 90px;
 		margin-top: 10px;
 		text-transform: uppercase;
 	}
@@ -57,7 +54,6 @@
 	.footer-blog-preview__link {
 		grid-template-columns: 70px 265px;
 		grid-column-gap: 29px;
-		line-height: 20px;
 	}
 
 	.footer-blog-preview__text {
