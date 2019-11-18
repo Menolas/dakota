@@ -660,12 +660,16 @@ textarea {
 
 @media (min-width: 1600px) {
   .banners {
-    padding-top: 70px;
-    padding-bottom: 83px;
+    padding-top: 55px;
+    padding-bottom: 85px;
     background-image: url(../img/banners-background-1600.png);
     background-size: 1600px 297px; }
   .banners__title {
-    margin-bottom: 52px; } }
+    margin-bottom: 22px; }
+  .banners__item {
+    margin-right: 68px; }
+    .banners__item:last-of-type {
+      margin-right: 0; } }
 
 .blog {
   display: grid;
@@ -1127,8 +1131,22 @@ textarea {
     grid-column-end: -1; }
   .gallery__list {
     grid-template-columns: 370px 670px;
-    grid-template-rows: auto auto auto;
-    grid-column-gap: 29px; } }
+    grid-template-rows: 233px 233px 221px;
+    grid-gap: 29px; }
+  .gallery__item:first-of-type {
+    width: 370px; }
+  .gallery__item:nth-of-type(2) {
+    width: 471px; }
+  .gallery__item:nth-of-type(3) {
+    width: 171px; }
+  .gallery__item:nth-of-type(4) {
+    width: 300px; }
+  .gallery__item:nth-of-type(5) {
+    width: 335px; }
+  .gallery__item:nth-of-type(6) {
+    width: 370px; }
+  .gallery__item:nth-of-type(7) {
+    width: 670px; } }
 
 .instagram-update {
   width: 200px; }
@@ -1406,13 +1424,16 @@ textarea {
 @media (min-width: 1600px) {
   .portfolio {
     grid-template-columns: 485px auto;
-    padding-top: 100px; }
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 135px; }
   .portfolio__content-wrap {
+    margin-bottom: 20px;
     padding-top: 206px;
     padding-left: 78px;
     padding-right: 69px; }
   .portfolio__title {
-    margin-bottom: 74px;
+    margin-bottom: 60px;
     text-align: left;
     line-height: 38px;
     font-weight: 400; }
@@ -1421,11 +1442,13 @@ textarea {
   .portfolio__text--mobile {
     display: none; }
   .portfolio__link {
-    margin-top: 38px;
+    margin-top: 18px;
     line-height: 38px; }
   .portfolio__btn {
-    padding-top: 19px;
-    padding-bottom: 18px;
+    margin-top: 63px;
+    margin-left: 50px;
+    padding-top: 7px;
+    padding-bottom: 6px;
     width: 217px;
     line-height: 38px;
     font-weight: 400; } }

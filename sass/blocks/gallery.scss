@@ -141,7 +141,38 @@
 
   .gallery__list {
   	grid-template-columns: 370px 670px;
-  	grid-template-rows: auto auto auto;
-  	grid-column-gap: 29px;
+  	grid-template-rows: 233px 233px 221px;
+  	grid-gap: 29px;
   }
+
+  .gallery__item {
+
+		&:first-of-type {
+			width: 370px;
+		}
+
+		&:nth-of-type(2) {
+			width: 471px;
+		}
+
+		&:nth-of-type(3) {
+			width: 171px;
+		}
+
+		&:nth-of-type(4) {
+			width: 300px;
+		}
+
+		&:nth-of-type(5) {
+			width: 335px;
+		}
+
+		&:nth-of-type(6) {
+			width: 370px;
+		}
+
+		&:nth-of-type(7) {
+			width: 670px;
+		}
+	}
 }

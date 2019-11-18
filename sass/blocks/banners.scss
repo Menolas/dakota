@@ -99,14 +99,21 @@
 
 @media (min-width: 1600px) {
 	.banners {
-		padding-top: 70px;
-		padding-bottom: 83px;
+		padding-top: 55px;
+		padding-bottom: 85px;
 		background-image: url(../img/banners-background-1600.png);
 		background-size: 1600px 297px;
 	}
 
 	.banners__title {
-		margin-bottom: 52px;
-		
+		margin-bottom: 22px;
+	}
+
+	.banners__item {
+		margin-right: 68px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
 }
