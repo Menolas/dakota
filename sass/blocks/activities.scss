@@ -32,6 +32,12 @@
 	}
 }
 
+@media (min-width: 1000px) {
+	.activities__title {
+		margin-bottom: 12px;
+	}
+}
+
 @media (min-width: 1600px) {
 	.activities {
 		margin-bottom: 59px;

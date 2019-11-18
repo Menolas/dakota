@@ -74,6 +74,33 @@
 	}
 }
 
+@media (min-width: 1000px) {
+	.about__illustration {
+		width: 322px;
+		height: 456px;
+	}
+
+	.about__content-wrap {
+		padding-top: 75px;
+		padding-left: 380px;
+		padding-right: 60px;
+		padding-bottom: 30px;
+	}
+
+	.about__title {
+		margin-bottom: 10px;
+	}
+
+	.about__text {
+		margin-bottom: 15px;
+	}
+
+	.about__btn {
+		width: 210px;
+		font-size: 12px;
+	}
+}
+
 @media (min-width: 1600px) {
 	.about {
 		padding-bottom: 149px;
@@ -84,7 +111,7 @@
 		width: 515px;
 		height: 730px;
 	}
-
+	
 	.about__content-wrap {
 		padding-top: 154px;
 		padding-left: 651px;
