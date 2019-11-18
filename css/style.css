@@ -633,24 +633,38 @@ textarea {
     .banners__item:last-of-type {
       margin-right: 0; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1000px) {
   .banners {
-    padding-top: 70px;
-    padding-bottom: 83px;
+    padding: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
     color: #ffffff;
     background-color: #2b2d5c;
     background-image: url(../img/banners-background-1600.png);
     background-repeat: no-repeat;
-    background-size: 1600px 297px; }
+    background-size: 1600px 297px;
+    background-position: center; }
   .banners__title {
-    margin-bottom: 52px;
+    margin-bottom: 30px;
     color: #ffffff; }
   .banners__list {
     padding: 0;
-    background-image: none;
-    background-color: transparent; }
+    height: auto;
+    background-color: transparent;
+    background-image: none; }
   .banners__item {
-    display: block; } }
+    margin-right: 40px; }
+    .banners__item:last-of-type {
+      margin-right: 0; } }
+
+@media (min-width: 1600px) {
+  .banners {
+    padding-top: 70px;
+    padding-bottom: 83px;
+    background-image: url(../img/banners-background-1600.png);
+    background-size: 1600px 297px; }
+  .banners__title {
+    margin-bottom: 52px; } }
 
 .blog {
   display: grid;
