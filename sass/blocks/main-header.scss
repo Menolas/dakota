@@ -10,13 +10,14 @@
 }
 
 .main-header__block-wrap {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: baseline;
 	justify-content: space-between;
 }
 
 .main-header__logo {
+	align-self: end;
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
@@ -24,7 +25,7 @@
 
 .main-header__logo p {
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 22px;
 	text-transform: uppercase;
 }
@@ -107,6 +108,7 @@
 	.main-header__logo p {
 		font-size: 20px;
 		line-height: 32px;
+		font-weight: 700;
 	}
 
 	.main-header__logo svg {
@@ -137,7 +139,7 @@
 
 @media (min-width: 1600px) {
 	.main-header {
-		padding-top: 66px;
+		padding-top: 58px;
 		padding-left: 216px;
 		padding-right: 100px;
 		padding-bottom: 33px;
@@ -147,12 +149,12 @@
 	}
 
 	.main-header__title {
-		margin-top: 270px;
-		margin-bottom: 38px;
+		margin-top: 258px;
+		margin-bottom: 15px;
 	}
 
 	.main-header__greeting {
-		margin-bottom: 49px;
+		margin-bottom: 43px;
 		@include font-base(20px, 32px);
 		color: $white;
 		font-weight: 400;

@@ -46,7 +46,7 @@
 
 @media (min-width: 1600px) {
 	.social-block__item {
-	  margin-left: 20px;
+	  margin-left: 24px;
 
 		&:first-of-type {
 			margin-left: 0;
@@ -56,12 +56,12 @@
 	.social-block__link {
 		@include link-style;
 		font-size: 0;
-		width: 23px;
-		height: 23px;
+		width: 21px;
+		height: 21px;
 	}
 
 	.social-block__link svg {
-		width: 23px;
-		height: 23px;
+		width: 21px;
+		height: 21px;
 	}
 }

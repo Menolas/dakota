@@ -107,16 +107,27 @@
 	.main-nav__item {
 		margin-bottom: 0;
 	}
+
+	.main-nav__link--active {
+
+		&::after {
+			bottom: 0;
+		}
+	}
 }
 
 @media (min-width: 1600px) {
 	.main-nav {
 		margin-left: auto;
-		margin-right: 115px;
+		margin-right: 107px;
 	}
 
 	.main-nav__list {
 		flex-direction: row;
+	}
+
+	.main-nav__item {
+		margin-left: 15px;
 	}
 
 	.main-nav__link {
