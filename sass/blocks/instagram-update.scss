@@ -93,6 +93,13 @@
 }
 
 @media (min-width: 1600px) {
+	.instagram-update {
+		grid-column-start: 4;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: -2;
+	}
+	
   .instagram-update__title {
 		margin-bottom: 28px;
 		font-size: 24px;

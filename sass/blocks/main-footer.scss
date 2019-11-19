@@ -102,16 +102,17 @@
 @media (min-width: 1600px) {
 	.main-footer {
 		grid-template-columns: auto auto auto auto;
-		grid-template-rows: auto auto;
-		grid-row-gap: 33px;
+		grid-template-rows: 35px auto auto;
+		grid-row-gap: 0;
+		grid-column-gap: 0;
 		justify-content: space-between;
-		padding-top: 95px;
+		padding-top: 90px;
 		padding-left: 215px;
 		padding-right: 215px;
 	}
 
 	.main-footer__logo {
-		margin-bottom: 39px;
+		margin-bottom: 0;
 	}
 
 	.main-footer__logo svg {
@@ -125,8 +126,17 @@
 		line-height: 32px;
 	}
 
+	.main-footer__contact {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: -2;
+		align-self: start;
+		margin-top: 18px;
+	}
+
 	.main-footer__contact-title {
-		margin-bottom: 20px;
+		margin-bottom: 3px;
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 38px;
@@ -137,7 +147,42 @@
 		line-height: 22px;
 	}
 
+	.main-footer__contact-email {
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.1px;
+	}
+
 	.main-footer__social-block {
-		margin-top: 43px;
+		margin-top: 32px;
+	}
+
+	.main-footer__social-block .social-block__item {
+		margin-left: 0;
+		margin-right: 13px;
+	}
+
+	.main-footer__social-block .social-block__link {
+		width: 18px;
+		height: 18px;
+	}
+
+	.main-footer__social-block .social-block__link svg {
+		width: 18px;
+		height: 18px;
+	}
+
+	.main-footer__blog-preview {
+		grid-column-start: 2;
+		grid-column-end: -3;
+		grid-row-start: 1;
+		grid-row-end: -2;
+	}
+
+	.main-footer__copyright {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 3;
+		grid-row-end: -1;
 	}
 }
