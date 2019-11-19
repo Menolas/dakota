@@ -1,0 +1,80 @@
+.control-handlers {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.control-handlers__handler {
+	position: relative;
+	width: 45px;
+	height: 45px;
+	background-color: $background-decor;
+	opacity: 0.8;
+}
+
+.control-handlers__element {
+	position: absolute;
+	display: block;
+	left: 10px;
+	width: 17px;
+	height: 1px;
+	background-color: $white;
+
+	&--up {
+		top: 15px;
+	  transform: rotate(-45deg);
+  }
+
+  &--low {
+  	top: 27px;
+  	transform: rotate(45deg);
+  }
+}
+
+.control-handlers__handler .control-handlers__element--up::before,
+.control-handlers__handler .control-handlers__element--low::before {
+	@include element-style(16px, 1px, $yellow);
+}
+
+.control-handlers__handler--left .control-handlers__element--up::before {
+	top: 5px;
+	left: 5px;
+}
+
+.control-handlers__handler--left .control-handlers__element--low::before {
+	top: -5px;
+	left: 5px;
+}
+
+.control-handlers__handler--right .control-handlers__element {
+	&--up {
+		top: 15px;
+		left: 20px;
+	  transform: rotate(45deg);
+  }
+
+  &--low {
+  	top: 27px;
+  	left: 20px;
+  	transform: rotate(-45deg);
+  }
+}
+
+.control-handlers__handler--right .control-handlers__element--up::before {
+	top: 5px;
+	left: -4px;
+}
+
+.control-handlers__handler--right .control-handlers__element--low::before {
+	top: -5px;
+	left: -4px;
+}
+
+.control-handlers__handler--faded {
+	opacity: 0.4;
+}
+
+.control-handlers__handler--faded .control-handlers__element {
+	opacity: 0.4;
+}

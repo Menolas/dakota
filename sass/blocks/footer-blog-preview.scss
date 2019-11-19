@@ -45,16 +45,17 @@
 	}
 
 	.footer-blog-preview__list {
-    grid-row-gap: 30px;
+    grid-row-gap: 21px;
 	}
 
 	.footer-blog-preview__link {
-		grid-template-columns: 70px 265px;
+		grid-template-columns: 70px 267px;
 		grid-column-gap: 29px;
 	}
 
 	.footer-blog-preview__text {
-		margin-bottom: 13px;
+		margin-bottom: 7px;
+		line-height: 17px;
 	}
 
 	.footer-blog-preview__date {
@@ -64,7 +65,7 @@
 
 	.footer-blog-preview__link-to-blog {
 		margin-left: 99px;
-		margin-top: 26px;
+		margin-top: 16px;
 		font-weight: 400;
 		line-height: 26px;
 	}

@@ -1,9 +1,17 @@
 .blog {
+  position: relative;
 	display: grid;
 	justify-content: space-around;
 	padding: 30px;
 	padding-bottom: 60px;
 	background-color: $background-color;
+}
+
+.blog__control-block {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
 }
 
 .blog__title {
@@ -76,6 +84,10 @@
 		padding: 40px 50px;
 		padding-bottom: 70px;
 	}
+
+  .blog__control-block {
+    display: none;
+  }
 
 	.blog__title {
 	  margin-bottom: 10px;
