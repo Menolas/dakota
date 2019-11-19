@@ -78,3 +78,9 @@
 .control-handlers__handler--faded .control-handlers__element {
 	opacity: 0.4;
 }
+
+@media (min-width: 768px) {
+	.control-handlers {
+		display: none;
+	}
+}
