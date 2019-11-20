@@ -81,7 +81,7 @@
 @media (min-width: 768px) {
 	.main-header {
 		padding: 20px 50px;
-		padding-bottom: 25px;
+		padding-bottom: 20px;
 	  background-image: url("../img/background-header-768.jpg");
 	  background-size: 800px 400px;
   }
@@ -95,22 +95,27 @@
   }
 
   .main-header__greeting {
-  	margin-bottom: 50px;
+  	margin-bottom: 25px;
   }
 
   .main-header__social-block {
 
 	  &::before {
-			@include element-style(380px, 1px, $white);
-			top: -25px;
-			right: -100px;
+			@include element-style(230px, 1px, $white);
+			top: -17px;
+			right: -50px;
 		}
 
 		&::after {
-			@include element-style(1px, 181px, $white);
-			bottom: -33px;
-			right: 180px;
+			@include element-style(1px, 100px, $white);
+			bottom: -25px;
+			right: 110px;
 		}
+	}
+
+	.main-header__btn {
+		margin-bottom: 60px;
+		width: 130px;
 	}
 }
 
@@ -151,7 +156,23 @@
 	}
 
 	.main-header__btn {
-		margin-bottom: 60px;
+		margin-bottom: 80px;
+		width: 160px;
+	}
+
+ .main-header__social-block {
+
+	  &::before {
+			@include element-style(300px, 1px, $white);
+			top: -20px;
+			right: -60px;
+		}
+
+		&::after {
+			@include element-style(1px, 111px, $white);
+			bottom: -30px;
+			right: 140px;
+		}
 	}
 }
 
@@ -181,6 +202,22 @@
 
 	.main-header__btn {
 		margin-bottom: 196px;
+		width: 220px;
 		font-size: 16px;
+	}
+
+	.main-header__social-block {
+
+	  &::before {
+			@include element-style(380px, 1px, $white);
+			top: -25px;
+			right: -100px;
+		}
+
+		&::after {
+			@include element-style(1px, 181px, $white);
+			bottom: -33px;
+			right: 180px;
+		}
 	}
 }
