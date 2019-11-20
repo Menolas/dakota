@@ -10,8 +10,9 @@
 .blog__control-block {
   position: absolute;
   top: 50%;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: 85%;
+  transform: translate(-50%, -40%);
 }
 
 .blog__title {

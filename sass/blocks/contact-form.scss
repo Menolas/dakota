@@ -1,8 +1,12 @@
 .contact-form__form {
 	padding-top: 50px;
 	padding-bottom: 35px;
-	background-color: $background-decor;
 	text-align: center;
+	background-color: $background-decor;
+  background-image: url("../img/contact-form-background-320.png");
+  background-repeat: no-repeat;
+  background-size: 370px 329px;
+  background-position: left top;
 }
 
 .contact-form__title {
@@ -97,6 +101,13 @@
 	}
 }
 
+@media (min-width: 768px) {
+	.contact-form__form {
+    background-image: url("../img/contact-form-background-768.png");
+    background-size: 800px 469px;
+  }
+}
+
 @media (min-width: 1000px) {
 	.contact-form {
 		padding-top: 140px;
@@ -105,6 +116,8 @@
 	.contact-form__form {
 		padding-top: 45px;
 		padding-bottom: 73px;
+		background-image: url("../img/contact-form-background-1000.png");
+		background-size: 1024px 504px;
 	}
 
 	.contact-form__title {
@@ -115,5 +128,10 @@
 @media (min-width: 1600px) {
 	.contact-form {
 		padding-top: 190px;
+	}
+
+	.contact-form__form {
+		background-image: url("../img/contact-form-background-1600.png");
+		background-size: 1600px 529px;
 	}
 }

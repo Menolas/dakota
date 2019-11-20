@@ -1,6 +1,7 @@
 .main-header {
 	position: relative;
 	padding: 15px 30px;
+	padding-bottom: 20px;
 	color: $white;
 	background-color: $background-decor;
 	background-image: url("../img/background-header-320.jpg");
@@ -52,7 +53,7 @@
 	display: none;
 	@include font-base(16px, 22px);
 	color: $white;
-	margin-bottom: 35px;
+	margin-bottom: 20px;
 	font-weight: 400;
 	letter-spacing: 0.1px;
 	opacity: 0.6;
@@ -66,18 +67,6 @@
 	position: relative;
 	display: grid;
 	margin-left: auto;
-
-	&::before {
-		@include element-style(380px, 1px, $white);
-		top: -25px;
-		right: -100px;
-	}
-
-	&::after {
-		@include element-style(1px, 181px, $white);
-		bottom: -33px;
-		right: 180px;
-	}
 }
 
 .main-header__social-block .social-block__list {
@@ -92,7 +81,7 @@
 @media (min-width: 768px) {
 	.main-header {
 		padding: 20px 50px;
-		padding-bottom: 40px;
+		padding-bottom: 25px;
 	  background-image: url("../img/background-header-768.jpg");
 	  background-size: 800px 400px;
   }
@@ -108,11 +97,27 @@
   .main-header__greeting {
   	margin-bottom: 50px;
   }
+
+  .main-header__social-block {
+
+	  &::before {
+			@include element-style(380px, 1px, $white);
+			top: -25px;
+			right: -100px;
+		}
+
+		&::after {
+			@include element-style(1px, 181px, $white);
+			bottom: -33px;
+			right: 180px;
+		}
+	}
 }
 
 @media (min-width: 1000px) {
 	.main-header {
 		padding: 40px 60px;
+		padding-bottom: 30px;
 		padding-left: 100px;
 		background-image: url("../img/background-header-1000.jpg");
 		background-size: 1024px 573px;
