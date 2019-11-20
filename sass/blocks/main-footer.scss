@@ -116,6 +116,10 @@
 		padding-top: 90px;
 		padding-left: 215px;
 		padding-right: 215px;
+
+		&::before {
+			bottom: 65px;
+		}
 	}
 
 	.main-footer__logo {
