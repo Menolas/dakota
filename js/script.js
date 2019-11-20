@@ -78,3 +78,22 @@ similarArticles.addEventListener('click', function (evt) {
     target.classList.add('blog__article--active');
 });
 
+// gallery animation 
+
+var similarGalleryPictures = document.querySelector('.gallery__list');
+var container = document.querySelector('.container');
+var bigPicture = similarGalleryPictures.querySelector('.gallery__big-picture');
+
+/*similarGalleryPictures.addEventListener('click', function (evt) {
+	var target = event.target;
+	container.classList.add('container--shown-overlay');
+	bigPicture.classList.add('gallery__big-picture--shown');
+});*/
+
+similarGalleryPictures.addEventListener('hover', function (evt) {
+    var target = event.target;
+    var socialBlock = target.querySelector('.gallery__social-block');
+    socialBlock.classList.add('gallery__social-block--shown');
+});
+
+

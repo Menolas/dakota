@@ -8,616 +8,690 @@
 	</head>
 	<body>
 		<div class="container">
-			<header class="main-header">
-				<div class="main-header__block-wrap">
-					<div class="main-header__logo">
+				<header class="main-header">
+					<div class="main-header__block-wrap">
+						<div class="main-header__logo">
+							<svg><use xlink:href="#logo"></use></svg>
+							<p>Photography</p>
+						</div>
+						<nav class="main-nav">
+							<div class="main-nav__toggler">
+								<span class="main-nav__toggler-element"></span>
+							</div>
+							<ul class="main-nav__list">
+								<li class="main-nav__item">
+									<a class="main-nav__link  main-nav__link--active" href="#">Home</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="#">About</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="#">Clients</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="#">Portfolio</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="#">Blog</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<h1 class="main-header__title  title">Hello, I'm<br>Dakota Jhonson</h1>
+					<h1 class="main-header__title  main-header__title--mobile  title">Dakota Jhonson</h1>
+					<p class="main-header__greeting">I’m an Art Director & Photographer based in the San Francisco.</p>
+					<p class="main-header__greeting  main-header__greeting--mobile">Art Director & Photographer</p>
+					<a  class="main-header__btn  btn" href="#">See My Works</a>
+					<div class="main-header__social-block  social-block">
+						<ul class="social-block__list">
+							<li class="social-block__item">
+								<a class="social-block__link  social-block__link--facebook" href="#">
+									<svg>
+										<use xlink:href="#facebook"></use>
+									</svg>
+								    My Facebook accaunt
+							    </a>
+							</li>
+							<li class="social-block__item">
+								<a class="social-block__link  social-block__link--twitter" href="#">
+									<svg>
+										<use xlink:href="#twitter"></use>
+									</svg>
+								    My Twitter accaunt
+							    </a>
+							</li>
+							<li class="social-block__item">
+								<a class="social-block__link  social-block__link--instagram" href="#">
+									<svg>
+										<use xlink:href="#instagram"></use>
+									</svg>
+								    My Instagram accaunt
+							    </a>
+							</li>
+							<li class="social-block__item">
+								<a class="social-block__link  social-block__link--flickr" href="#">
+									<svg>
+										<use xlink:href="#flickr"></use>
+									</svg>
+									My Flickr accaunt
+								</a>
+							</li>
+						</ul>
+					</div>
+				</header>
+				<main>
+					<article class="about">
+						<div class="about__illustration">
+							<picture>
+								<source media="(min-width: 1600px)" srcset="img/about-illustration-1600.jpg">
+								<source media="(min-width: 1000px)" srcset="img/about-illustration-1000.jpg">
+				                <img src="img/about-illustration-768.jpg" alt="illustration">
+							</picture>
+						</div>
+						<div class="about__content-wrap">
+							<h2 class="about__title  title__secondary">About MySelf</h2>
+							<p class="about__text">Hey, thanks for stopping by. My name’s Dakota Jhonson junior and I’m a briliant Art Director and pro Photographer based in the San Francisco where I make cool things for agencies and brands around globe. Mentas is loaded with useful features, each one with its own meaningful purpose. We listen to our users and integrate their feature requests on a regular basis. If you like my work then please do not  hesitate to reach out.</p>
+							<div class="activities">
+								<h3 class="activities__title title__third">What I Do?</h3>
+								<ul class="activities__list">
+									<li class="activities__item">
+										<a class="activities__link" href="#">
+											<h4 class="activities__link-title">FASHION</h4>
+											<picture>
+								                <source media="(min-width: 1600px)" srcset="img/about-fashion-1600.jpg">
+							                	<source media="(min-width: 1000px)" srcset="img/about-fashion-1000.jpg">
+								                <img src="img/about-fashion-320.jpg" alt="miniature">
+											</picture>
+											<p class="activities__description">Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body, or furniture.</p>
+										</a>
+									</li>
+									<li class="activities__item">
+										<a class="activities__link" href="#">
+											<h4 class="activities__link-title">PORTRAITS</h4>
+											<picture>
+												<source media="(min-width: 1600px)" srcset="img/about-portraits-1600.jpg">
+								                <source media="(min-width: 1000px)" srcset="img/about-portraits-1000.jpg">
+								                <img src="img/about-portraits-320.jpg" alt="miniature">
+											</picture>
+											<p class="activities__description">Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body, or furniture.</p>
+										</a>
+									</li>
+									<li class="activities__item">
+										<a class="activities__link" href="#">
+											<h4 class="activities__link-title">LIFESTYLE</h4>
+											<picture>
+												<source media="(min-width: 1600px)" srcset="img/about-lifestyle-1600.jpg">
+								                <source media="(min-width: 1000px)" srcset="img/about-lifestyle-1000.jpg">
+								                <img src="img/about-lifestyle-320.jpg" alt="miniature">
+											</picture>
+											<p class="activities__description">Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body, or furniture.</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a class="about__btn  btn" href="#">View My Flickr Profile</a>
+						</div>
+					</article>
+					<section class="banners">
+						<h2 class="banners__title  title__secondary">Happy Clients</h2>
+						<ul class="banners__list">
+							<li class="banners__item  banners__item--shown">
+								<a class="banners__link" href="#">
+									<img src="img/banners-salonCentric.png" alt="banner">
+								</a>
+							</li>
+							<li class="banners__item">
+								<a class="banners__link" href="#">
+									<img src="img/banners-luscious.png" alt="banner">
+								</a>
+							</li>
+							<li class="banners__item">
+								<a class="banners__link" href="#">
+									<img src="img/banners-brillBird.png" alt="banner">
+								</a>
+							</li>
+							<li class="banners__item">
+								<a class="banners__link" href="#">
+									<img src="img/banners-loxaBeauty.png" alt="banner">
+								</a>
+							</li>
+							<li class="banners__item">
+								<a class="banners__link" href="#">
+									<img src="img/banners-minkys.png" alt="banner">
+								</a>
+							</li>
+							<li class="banners__item">
+								<a class="banners__link" href="#">
+									<img src="img/banners-babaria.png" alt="banner">
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section class="portfolio">
+						<div class="portfolio__content-wrap">
+							<h2 class="portfolio__title  title__secondary">Portfolio</h2>
+							<p class="portfolio__text  portfolio__text--mobile">The point of using Lorem Ipsum is that it has a non  more-or-less  dik sonormal distri bution of letters, as cliper...</p>
+							<p class="portfolio__text">The point of using Lorem Ipsum is that it has a non  more-or-less  dik sonormal distri bution of letters, as cliper opposed. a closer look to our fully furnished and beautiful demos, which can be use easily On this find website you can find some pictures I've taken during my travel. a clo look to our fully furnished and so beautful demos, which can be use.</p>
+							<a class="portfolio__link" href="#">Read More...</a>
+						</div>
+						<div class="gallery">
+							<ul class="gallery__list">
+								<li class="gallery__item">
+									<div class="gallery__big-picture">
+										<picture>
+											<source media="(min-width: 768px)" srcset="img/gallery-1-768.jpg">
+											<img src="img/gallery-1-320.jpg" alt="gallery big picture">
+										</picture>
+										<div class="gallery__social-block social-block">
+										<div class="gallery__social-block-share">
+											<svg>
+												<use xlink:href="#share"></use>
+											</svg>
+										</div>
+										<ul class="social-block__list">
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#facebook"></use>
+													</svg>
+													Share this picture in Facebook
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#twitter"></use>
+													</svg>
+													Share this picture in Twitter
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#instagram"></use>
+													</svg>
+													Share this picture in Instagram
+												</a>
+											</li>
+										</ul>
+									</div>
+									</div>
+									<a class="gallery__link" href="#">
+										<picture>
+											<source media="(min-width: 1600px)" srcset="img/gallery-1-1600.jpg">
+			                <source media="(min-width: 768px)" srcset="img/gallery-1-768-collage.jpg">
+			                <img src="img/gallery-1-320-collage.jpg" alt="gallery picture">
+										</picture>
+									</a>
+									<div class="gallery__social-block social-block">
+										<div class="gallery__social-block-share">
+											<svg>
+												<use xlink:href="#share"></use>
+											</svg>
+										</div>
+										<ul class="social-block__list">
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#facebook"></use>
+													</svg>
+													Share this picture in Facebook
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#twitter"></use>
+													</svg>
+													Share this picture in Twitter
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#instagram"></use>
+													</svg>
+													Share this picture in Instagram
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="#">
+										<picture>
+											<source media="(min-width: 1600px)" srcset="img/gallery-2-1600.jpg">
+							                <source media="(min-width: 768px)" srcset="img/gallery-2-768-collage.jpg">
+							                <img src="img/gallery-2-320-collage.jpg" alt="gallery picture">
+										</picture>
+									</a>
+									<div class="gallery__social-block social-block">
+										<div class="gallery__social-block-share">
+											<svg>
+												<use xlink:href="#share"></use>
+											</svg>
+										</div>
+										<ul class="social-block__list">
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#facebook"></use>
+													</svg>
+													Share this picture in Facebook
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#twitter"></use>
+													</svg>
+													Share this picture in Twitter
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#instagram"></use>
+													</svg>
+													Share this picture in Instagram
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="#">
+										<picture>
+											<source media="(min-width: 1600px)" srcset="img/gallery-3-1600.jpg">
+							                <source media="(min-width: 768px)" srcset="img/gallery-3-768-collage.jpg">
+							                <img src="img/gallery-3-320-collage.jpg" alt="gallery picture">
+										</picture>
+									</a>
+									<div class="gallery__social-block social-block">
+										<div class="gallery__social-block-share">
+											<svg>
+												<use xlink:href="#share"></use>
+											</svg>
+										</div>
+										<ul class="social-block__list">
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#facebook"></use>
+													</svg>
+													Share this picture in Facebook
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#twitter"></use>
+													</svg>
+													Share this picture in Twitter
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#instagram"></use>
+													</svg>
+													Share this picture in Instagram
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="#">
+										<picture>
+											<source media="(min-width: 1600px)" srcset="img/gallery-4-1600.jpg">
+							                <source media="(min-width: 768px)" srcset="img/gallery-4-768-collage.jpg">
+							                <img src="img/gallery-4-320-collage.jpg" alt="gallery picture">
+										</picture>
+									</a>
+									<div class="gallery__social-block social-block">
+										<div class="gallery__social-block-share">
+											<svg>
+												<use xlink:href="#share"></use>
+											</svg>
+										</div>
+										<ul class="social-block__list">
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#facebook"></use>
+													</svg>
+													Share this picture in Facebook
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#twitter"></use>
+													</svg>
+													Share this picture in Twitter
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#instagram"></use>
+													</svg>
+													Share this picture in Instagram
+												</a>
+											</li>
+										</ul>
+										</div>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="#">
+										<picture>
+											<source media="(min-width: 1600px)" srcset="img/gallery-5-1600.jpg">
+							                <source media="(min-width: 768px)" srcset="img/gallery-5-768-collage.jpg">
+							                <img src="img/gallery-5-320-collage.jpg" alt="gallery picture">
+										</picture>
+									</a>
+									<div class="gallery__social-block social-block">
+										<div class="gallery__social-block-share">
+											<svg>
+												<use xlink:href="#share"></use>
+											</svg>
+										</div>
+										<ul class="social-block__list">
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#facebook"></use>
+													</svg>
+													Share this picture in Facebook
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#twitter"></use>
+													</svg>
+													Share this picture in Twitter
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#instagram"></use>
+													</svg>
+													Share this picture in Instagram
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="#">
+										<picture>
+											<source media="(min-width: 1600px)" srcset="img/gallery-6-1600.jpg">
+							                <source media="(min-width: 768px)" srcset="img/gallery-6-768-collage.jpg">
+							                <img src="img/gallery-6-320-collage.jpg" alt="gallery picture">
+										</picture>
+									</a>
+									<div class="gallery__social-block social-block">
+										<div class="gallery__social-block-share">
+											<svg>
+												<use xlink:href="#share"></use>
+											</svg>
+										</div>
+										<ul class="social-block__list">
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#facebook"></use>
+													</svg>
+													Share this picture in Facebook
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#twitter"></use>
+													</svg>
+													Share this picture in Twitter
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#instagram"></use>
+													</svg>
+													Share this picture in Instagram
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="gallery__item">
+									<a class="gallery__link" href="#">
+										<picture>
+											<source media="(min-width: 1600px)" srcset="img/gallery-7-1600.jpg">
+							                <source media="(min-width: 768px)" srcset="img/gallery-7-768-collage.jpg">
+							                <img src="img/gallery-7-320-collage.jpg" alt="gallery picture">
+										</picture>
+									</a>
+									<div class="gallery__social-block social-block">
+										<div class="gallery__social-block-share">
+											<svg>
+												<use xlink:href="#share"></use>
+											</svg>
+										</div>
+										<ul class="social-block__list">
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#facebook"></use>
+													</svg>
+													Share this picture in Facebook
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#twitter"></use>
+													</svg>
+													Share this picture in Twitter
+												</a>
+											</li>
+											<li class="social-block__item">
+												<a class="social-block__link" href="#">
+													<svg>
+														<use xlink:href="#instagram"></use>
+													</svg>
+													Share this picture in Instagram
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<a class="portfolio__btn  btn" href="#">See More</a>
+						</div>
+					</section>
+					<section class="blog">
+						<div class="blog__control-block  control-handlers">
+							<div class="control-handlers__handler  control-handlers__handler--left  control-handlers__handler--faded">
+								<span class="control-handlers__element  control-handlers__element--up"></span>
+								<span class="control-handlers__element  control-handlers__element--low"></span>
+							</div>
+							<div class="control-handlers__handler  control-handlers__handler--right">
+								<span class="control-handlers__element  control-handlers__element--up"></span>
+								<span class="control-handlers__element  control-handlers__element--low"></span>
+							</div>
+						</div>
+						<div class="blog__content-wrap">
+							<h2 class="blog__title  title__secondary">Blog</h2>
+							<p class="blog__text">The point of using Lorem Ipsum is that it has a non  more-or-less  normal distri bution of letters, as cliper opposed. a closer look to our fully</p>
+						</div>
+						<article class="blog__article  blog__article--shown">
+							<img class="blog__article-illustration" src="img/blog-illustration-1-1600.jpg" alt="blog article illustration">
+							<div class="blog__article-content-wrap">
+								<h4 class="blog__article-title">Design is the method of putting form and content together.</h4>
+								<p class="blog__article-date"><span>Life style</span> - July 3, 2017</p>
+								<p class="blog__article-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p>
+								<a class="blog__article-link" href="#">Read More</a>
+							</div>
+						</article>
+						<article class="blog__article  blog__article--active">
+							<img class="blog__article-illustration" src="img/blog-illustration-2-1600.jpg" alt="blog article illustration">
+							<div class="blog__article-content-wrap">
+								<h4 class="blog__article-title">Design is the method of putting form and content together.</h4>
+								<p class="blog__article-date"><span>Life style</span> - July 3, 2017</p>
+								<p class="blog__article-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p>
+								<a class="blog__article-link" href="#">Read More</a>
+							</div>
+						</article>
+						<article class="blog__article">
+							<img class="blog__article-illustration" src="img/blog-illustration-3-1600.jpg" alt="blog article illustration">
+							<div class="blog__article-content-wrap">
+								<h4 class="blog__article-title">Design is the method of putting form and content together.</h4>
+								<p class="blog__article-date"><span>Life style</span> - July 3, 2017</p>
+								<p class="blog__article-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p>
+								<a class="blog__article-link" href="#">Read More</a>
+							</div>
+						</article>
+					</section>
+					<section class="contact-form">
+						<form class="contact-form__form" action="#" method="post">
+							<h2 class="contact-form__title  title__secondary">Let's work?</h2>
+							<div class="contact-form__field-wrap">
+								<input type="text" name="name" id="name">
+								<label for="name"><sup>*</sup>Your name</label>
+							</div>
+							<div class="contact-form__field-wrap">
+								<input type="text" name="email" id="email">
+								<label for="email"><sup>*</sup>Your Email</label>
+							</div>
+							<div class="contact-form__field-wrap  contact-form__field-wrap--textarea">
+								<textarea>Your Messages</textarea>
+							</div>
+							<input class="contact-form__btn  btn" type="submit" value="SEND MESSAGE">
+						</form>
+						<button class="contact-form__handler"></button>
+					</section>
+				</main>
+				<footer class="main-footer">
+					<div class="main-footer__logo">
 						<svg><use xlink:href="#logo"></use></svg>
 						<p>Photography</p>
 					</div>
-					<nav class="main-nav">
-						<div class="main-nav__toggler">
-							<span class="main-nav__toggler-element"></span>
+					<section class="main-footer__contact">
+						<h4 class="main-footer__contact-title">Contact</h4>
+						<p class="main-footer__contact-text">237 Church St, San Francisco,<br> 
+						CA 94114, USA</p>
+						<p class="main-footer__contact-email">nazmulhasanjingar@gmail.com</p>
+						<div class="main-footer__social-block  social-block">
+							<h4 class="main-footer__contact-title  main-footer__contact-title--social">Follow me on:</h4>
+							<ul class="social-block__list">
+							<li class="social-block__item">
+								<a class="social-block__link  social-block__link--facebook" href="#">
+									<svg>
+										<use xlink:href="#facebook"></use>
+									</svg>
+								    My Facebook accaunt
+							    </a>
+							</li>
+							<li class="social-block__item">
+								<a class="social-block__link  social-block__link--twitter" href="#">
+									<svg>
+										<use xlink:href="#twitter"></use>
+									</svg>
+								    My Twitter accaunt
+							    </a>
+							</li>
+							<li class="social-block__item">
+								<a class="social-block__link  social-block__link--instagram" href="#">
+									<svg>
+										<use xlink:href="#instagram"></use>
+									</svg>
+								    My Instagram accaunt
+							    </a>
+							</li>
+							<li class="social-block__item">
+								<a class="social-block__link  social-block__link--flickr" href="#">
+									<svg>
+										<use xlink:href="#flickr"></use>
+									</svg>
+									My Flickr accaunt
+								</a>
+							</li>
+						</ul>
 						</div>
-						<ul class="main-nav__list">
-							<li class="main-nav__item">
-								<a class="main-nav__link  main-nav__link--active" href="#">Home</a>
+					</section>
+					<section class="main-footer__blog-preview  footer-blog-preview">
+						<h3 class="footer-blog-preview__title  title__third">Latest Blog Posts</h3>
+						<ul class="footer-blog-preview__list">
+							<li class="footer-blog-preview__item">
+								<a class="footer-blog-preview__link" href="#">
+									<img src="img/footer-blog-1.jpg" alt="blog post miniature">
+									<div class="footer-blog-preview__content-wrap">
+										<p class="footer-blog-preview__text">Design is the method of putting form and content together.</p>
+										<p class="footer-blog-preview__date"><span>Life style</span> - July 3, 2017</p>
+									</div>
+								</a>
 							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="#">About</a>
+							<li class="footer-blog-preview__item">
+								<a class="footer-blog-preview__link" href="#">
+									<img src="img/footer-blog-2.jpg" alt="blog post miniature">
+									<div class="footer-blog-preview__content-wrap">
+										<p class="footer-blog-preview__text">Design is the method of putting form and content together.</p>
+										<p class="footer-blog-preview__date"><span>Life style</span> - July 3, 2017</p>
+									</div>
+								</a>
 							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="#">Clients</a>
+						</ul>
+						<a class="footer-blog-preview__link-to-blog" href="#">MORE...</a>
+					</section>
+					<nav class="footer-nav">
+						<h3 class="footer-nav__title  title__third">Quick Link</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">Home</a>
 							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="#">Portfolio</a>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">About</a>
 							</li>
-							<li class="main-nav__item">
-								<a class="main-nav__link" href="#">Blog</a>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">Clients</a>
+							</li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">Portfolio</a>
+							</li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">Blog</a>
 							</li>
 						</ul>
 					</nav>
-				</div>
-				<h1 class="main-header__title  title">Hello, I'm<br>Dakota Jhonson</h1>
-				<h1 class="main-header__title  main-header__title--mobile  title">Dakota Jhonson</h1>
-				<p class="main-header__greeting">I’m an Art Director & Photographer based in the San Francisco.</p>
-				<p class="main-header__greeting  main-header__greeting--mobile">Art Director & Photographer</p>
-				<a  class="main-header__btn  btn" href="#">See My Works</a>
-				<div class="main-header__social-block  social-block">
-					<ul class="social-block__list">
-						<li class="social-block__item">
-							<a class="social-block__link  social-block__link--facebook" href="#">
-								<svg>
-									<use xlink:href="#facebook"></use>
-								</svg>
-							    My Facebook accaunt
-						    </a>
-						</li>
-						<li class="social-block__item">
-							<a class="social-block__link  social-block__link--twitter" href="#">
-								<svg>
-									<use xlink:href="#twitter"></use>
-								</svg>
-							    My Twitter accaunt
-						    </a>
-						</li>
-						<li class="social-block__item">
-							<a class="social-block__link  social-block__link--instagram" href="#">
-								<svg>
-									<use xlink:href="#instagram"></use>
-								</svg>
-							    My Instagram accaunt
-						    </a>
-						</li>
-						<li class="social-block__item">
-							<a class="social-block__link  social-block__link--flickr" href="#">
-								<svg>
-									<use xlink:href="#flickr"></use>
-								</svg>
-								My Flickr accaunt
-							</a>
-						</li>
-					</ul>
-				</div>
-			</header>
-			<main>
-				<article class="about">
-					<div class="about__illustration">
-						<picture>
-							<source media="(min-width: 1600px)" srcset="img/about-illustration-1600.jpg">
-							<source media="(min-width: 1000px)" srcset="img/about-illustration-1000.jpg">
-			                <img src="img/about-illustration-768.jpg" alt="illustration">
-						</picture>
-					</div>
-					<div class="about__content-wrap">
-						<h2 class="about__title  title__secondary">About MySelf</h2>
-						<p class="about__text">Hey, thanks for stopping by. My name’s Dakota Jhonson junior and I’m a briliant Art Director and pro Photographer based in the San Francisco where I make cool things for agencies and brands around globe. Mentas is loaded with useful features, each one with its own meaningful purpose. We listen to our users and integrate their feature requests on a regular basis. If you like my work then please do not  hesitate to reach out.</p>
-						<div class="activities">
-							<h3 class="activities__title title__third">What I Do?</h3>
-							<ul class="activities__list">
-								<li class="activities__item">
-									<a class="activities__link" href="#">
-										<h4 class="activities__link-title">FASHION</h4>
-										<picture>
-							                <source media="(min-width: 1600px)" srcset="img/about-fashion-1600.jpg">
-						                	<source media="(min-width: 1000px)" srcset="img/about-fashion-1000.jpg">
-							                <img src="img/about-fashion-320.jpg" alt="miniature">
-										</picture>
-										<p class="activities__description">Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body, or furniture.</p>
-									</a>
-								</li>
-								<li class="activities__item">
-									<a class="activities__link" href="#">
-										<h4 class="activities__link-title">PORTRAITS</h4>
-										<picture>
-											<source media="(min-width: 1600px)" srcset="img/about-portraits-1600.jpg">
-							                <source media="(min-width: 1000px)" srcset="img/about-portraits-1000.jpg">
-							                <img src="img/about-portraits-320.jpg" alt="miniature">
-										</picture>
-										<p class="activities__description">Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body, or furniture.</p>
-									</a>
-								</li>
-								<li class="activities__item">
-									<a class="activities__link" href="#">
-										<h4 class="activities__link-title">LIFESTYLE</h4>
-										<picture>
-											<source media="(min-width: 1600px)" srcset="img/about-lifestyle-1600.jpg">
-							                <source media="(min-width: 1000px)" srcset="img/about-lifestyle-1000.jpg">
-							                <img src="img/about-lifestyle-320.jpg" alt="miniature">
-										</picture>
-										<p class="activities__description">Fashion is a popular style or practice, especially in clothing, footwear, accessories, makeup, body, or furniture.</p>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<a class="about__btn  btn" href="#">View My Flickr Profile</a>
-					</div>
-				</article>
-				<section class="banners">
-					<h2 class="banners__title  title__secondary">Happy Clients</h2>
-					<ul class="banners__list">
-						<li class="banners__item  banners__item--shown">
-							<a class="banners__link" href="#">
-								<img src="img/banners-salonCentric.png" alt="banner">
-							</a>
-						</li>
-						<li class="banners__item">
-							<a class="banners__link" href="#">
-								<img src="img/banners-luscious.png" alt="banner">
-							</a>
-						</li>
-						<li class="banners__item">
-							<a class="banners__link" href="#">
-								<img src="img/banners-brillBird.png" alt="banner">
-							</a>
-						</li>
-						<li class="banners__item">
-							<a class="banners__link" href="#">
-								<img src="img/banners-loxaBeauty.png" alt="banner">
-							</a>
-						</li>
-						<li class="banners__item">
-							<a class="banners__link" href="#">
-								<img src="img/banners-minkys.png" alt="banner">
-							</a>
-						</li>
-						<li class="banners__item">
-							<a class="banners__link" href="#">
-								<img src="img/banners-babaria.png" alt="banner">
-							</a>
-						</li>
-					</ul>
-				</section>
-				<section class="portfolio">
-					<div class="portfolio__content-wrap">
-						<h2 class="portfolio__title  title__secondary">Portfolio</h2>
-						<p class="portfolio__text  portfolio__text--mobile">The point of using Lorem Ipsum is that it has a non  more-or-less  dik sonormal distri bution of letters, as cliper...</p>
-						<p class="portfolio__text">The point of using Lorem Ipsum is that it has a non  more-or-less  dik sonormal distri bution of letters, as cliper opposed. a closer look to our fully furnished and beautiful demos, which can be use easily On this find website you can find some pictures I've taken during my travel. a clo look to our fully furnished and so beautful demos, which can be use.</p>
-						<a class="portfolio__link" href="#">Read More...</a>
-					</div>
-					<div class="gallery">
-						<ul class="gallery__list">
-							<li class="gallery__item">
-								<a class="gallery__link" href="#">
-									<picture>
-										<source media="(min-width: 1600px)" srcset="img/gallery-1-1600.jpg">
-						                <source media="(min-width: 768px)" srcset="img/gallery-1-768-collage.jpg">
-						                <img src="img/gallery-1-320-collage.jpg" alt="gallery picture">
-									</picture>
-								</a>
-								<div class="gallery__social-block social-block">
-									<ul class="social-block__list">
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#facebook"></use>
-												</svg>
-												Share this picture in Facebook
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#twitter"></use>
-												</svg>
-												Share this picture in Twitter
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#instagram"></use>
-												</svg>
-												Share this picture in Instagram
-											</a>
-										</li>
-									</ul>
-								</div>
+					<section class="instagram-update">
+						<h3 class="instagram-update__title  title__third">Instagram Update</h3>
+						<ul class="instagram-update__list">
+							<li class="instagram-update__item">
+								<a class="instagram-update__link" href="#"><img src="img/footer-insta-1.jpg" alt="instagram picture"></a>
 							</li>
-							<li class="gallery__item">
-								<a class="gallery__link" href="#">
-									<picture>
-										<source media="(min-width: 1600px)" srcset="img/gallery-2-1600.jpg">
-						                <source media="(min-width: 768px)" srcset="img/gallery-2-768-collage.jpg">
-						                <img src="img/gallery-2-320-collage.jpg" alt="gallery picture">
-									</picture>
-								</a>
-								<div class="gallery__social-block social-block">
-									<ul class="social-block__list">
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#facebook"></use>
-												</svg>
-												Share this picture in Facebook
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#twitter"></use>
-												</svg>
-												Share this picture in Twitter
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#instagram"></use>
-												</svg>
-												Share this picture in Instagram
-											</a>
-										</li>
-									</ul>
-								</div>
+							<li class="instagram-update__item">
+								<a class="instagram-update__link" href="#"><img src="img/footer-insta-2.jpg" alt="instagram picture"></a>
 							</li>
-							<li class="gallery__item">
-								<a class="gallery__link" href="#">
-									<picture>
-										<source media="(min-width: 1600px)" srcset="img/gallery-3-1600.jpg">
-						                <source media="(min-width: 768px)" srcset="img/gallery-3-768-collage.jpg">
-						                <img src="img/gallery-3-320-collage.jpg" alt="gallery picture">
-									</picture>
-								</a>
-								<div class="gallery__social-block social-block">
-									<ul class="social-block__list">
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#facebook"></use>
-												</svg>
-												Share this picture in Facebook
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#twitter"></use>
-												</svg>
-												Share this picture in Twitter
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#instagram"></use>
-												</svg>
-												Share this picture in Instagram
-											</a>
-										</li>
-									</ul>
-								</div>
+							<li class="instagram-update__item">
+								<a class="instagram-update__link" href="#"><img src="img/footer-insta-3.jpg" alt="instagram picture"></a>
 							</li>
-							<li class="gallery__item">
-								<a class="gallery__link" href="#">
-									<picture>
-										<source media="(min-width: 1600px)" srcset="img/gallery-4-1600.jpg">
-						                <source media="(min-width: 768px)" srcset="img/gallery-4-768-collage.jpg">
-						                <img src="img/gallery-4-320-collage.jpg" alt="gallery picture">
-									</picture>
-								</a>
-								<div class="gallery__social-block social-block">
-									<ul class="social-block__list">
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#facebook"></use>
-												</svg>
-												Share this picture in Facebook
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#twitter"></use>
-												</svg>
-												Share this picture in Twitter
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#instagram"></use>
-												</svg>
-												Share this picture in Instagram
-											</a>
-										</li>
-									</ul>
-									</div>
+							<li class="instagram-update__item">
+								<a class="instagram-update__link" href="#"><img src="img/footer-insta-4.jpg" alt="instagram picture"></a>
 							</li>
-							<li class="gallery__item">
-								<a class="gallery__link" href="#">
-									<picture>
-										<source media="(min-width: 1600px)" srcset="img/gallery-5-1600.jpg">
-						                <source media="(min-width: 768px)" srcset="img/gallery-5-768-collage.jpg">
-						                <img src="img/gallery-5-320-collage.jpg" alt="gallery picture">
-									</picture>
-								</a>
-								<div class="gallery__social-block social-block">
-									<ul class="social-block__list">
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#facebook"></use>
-												</svg>
-												Share this picture in Facebook
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#twitter"></use>
-												</svg>
-												Share this picture in Twitter
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#instagram"></use>
-												</svg>
-												Share this picture in Instagram
-											</a>
-										</li>
-									</ul>
-								</div>
+							<li class="instagram-update__item">
+								<a class="instagram-update__link" href="#"><img src="img/footer-insta-5.jpg" alt="instagram picture"></a>
 							</li>
-							<li class="gallery__item">
-								<a class="gallery__link" href="#">
-									<picture>
-										<source media="(min-width: 1600px)" srcset="img/gallery-6-1600.jpg">
-						                <source media="(min-width: 768px)" srcset="img/gallery-6-768-collage.jpg">
-						                <img src="img/gallery-6-320-collage.jpg" alt="gallery picture">
-									</picture>
-								</a>
-								<div class="gallery__social-block social-block">
-									<ul class="social-block__list">
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#facebook"></use>
-												</svg>
-												Share this picture in Facebook
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#twitter"></use>
-												</svg>
-												Share this picture in Twitter
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#instagram"></use>
-												</svg>
-												Share this picture in Instagram
-											</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li class="gallery__item">
-								<a class="gallery__link" href="#">
-									<picture>
-										<source media="(min-width: 1600px)" srcset="img/gallery-7-1600.jpg">
-						                <source media="(min-width: 768px)" srcset="img/gallery-7-768-collage.jpg">
-						                <img src="img/gallery-7-320-collage.jpg" alt="gallery picture">
-									</picture>
-								</a>
-								<div class="gallery__social-block social-block">
-									<ul class="social-block__list">
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#facebook"></use>
-												</svg>
-												Share this picture in Facebook
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#twitter"></use>
-												</svg>
-												Share this picture in Twitter
-											</a>
-										</li>
-										<li class="social-block__item">
-											<a class="social-block__link" href="#">
-												<svg>
-													<use xlink:href="#instagram"></use>
-												</svg>
-												Share this picture in Instagram
-											</a>
-										</li>
-									</ul>
-								</div>
+							<li class="instagram-update__item">
+								<a class="instagram-update__link" href="#"><img src="img/footer-insta-6.jpg" alt="instagram picture"></a>
 							</li>
 						</ul>
-						<a class="portfolio__btn  btn" href="#">See More</a>
-					</div>
-				</section>
-				<section class="blog">
-					<div class="blog__control-block  control-handlers">
-						<div class="control-handlers__handler  control-handlers__handler--left  control-handlers__handler--faded">
-							<span class="control-handlers__element  control-handlers__element--up"></span>
-							<span class="control-handlers__element  control-handlers__element--low"></span>
-						</div>
-						<div class="control-handlers__handler  control-handlers__handler--right">
-							<span class="control-handlers__element  control-handlers__element--up"></span>
-							<span class="control-handlers__element  control-handlers__element--low"></span>
-						</div>
-					</div>
-					<div class="blog__content-wrap">
-						<h2 class="blog__title  title__secondary">Blog</h2>
-						<p class="blog__text">The point of using Lorem Ipsum is that it has a non  more-or-less  normal distri bution of letters, as cliper opposed. a closer look to our fully</p>
-					</div>
-					<article class="blog__article  blog__article--shown">
-						<img class="blog__article-illustration" src="img/blog-illustration-1-1600.jpg" alt="blog article illustration">
-						<div class="blog__article-content-wrap">
-							<h4 class="blog__article-title">Design is the method of putting form and content together.</h4>
-							<p class="blog__article-date"><span>Life style</span> - July 3, 2017</p>
-							<p class="blog__article-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p>
-							<a class="blog__article-link" href="#">Read More</a>
-						</div>
-					</article>
-					<article class="blog__article  blog__article--active">
-						<img class="blog__article-illustration" src="img/blog-illustration-2-1600.jpg" alt="blog article illustration">
-						<div class="blog__article-content-wrap">
-							<h4 class="blog__article-title">Design is the method of putting form and content together.</h4>
-							<p class="blog__article-date"><span>Life style</span> - July 3, 2017</p>
-							<p class="blog__article-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p>
-							<a class="blog__article-link" href="#">Read More</a>
-						</div>
-					</article>
-					<article class="blog__article">
-						<img class="blog__article-illustration" src="img/blog-illustration-3-1600.jpg" alt="blog article illustration">
-						<div class="blog__article-content-wrap">
-							<h4 class="blog__article-title">Design is the method of putting form and content together.</h4>
-							<p class="blog__article-date"><span>Life style</span> - July 3, 2017</p>
-							<p class="blog__article-text">Sed ut perspiciatis unde omnis iste natus error sit lao hoksi voluptatem lios mukatu accusantium doloremq doisa nojilaudan tium, totam rem aperiam, uni eaque ipsa quae ab cok illo inven tore siva.</p>
-							<a class="blog__article-link" href="#">Read More</a>
-						</div>
-					</article>
-				</section>
-				<section class="contact-form">
-					<form class="contact-form__form" action="#" method="post">
-						<h2 class="contact-form__title  title__secondary">Let's work?</h2>
-						<div class="contact-form__field-wrap">
-							<input type="text" name="name" id="name">
-							<label for="name"><sup>*</sup>Your name</label>
-						</div>
-						<div class="contact-form__field-wrap">
-							<input type="text" name="email" id="email">
-							<label for="email"><sup>*</sup>Your Email</label>
-						</div>
-						<div class="contact-form__field-wrap  contact-form__field-wrap--textarea">
-							<textarea>Your Messages</textarea>
-						</div>
-						<input class="contact-form__btn  btn" type="submit" value="SEND MESSAGE">
-					</form>
-					<button class="contact-form__handler"></button>
-				</section>
-			</main>
-			<footer class="main-footer">
-				<div class="main-footer__logo">
-					<svg><use xlink:href="#logo"></use></svg>
-					<p>Photography</p>
-				</div>
-				<section class="main-footer__contact">
-					<h4 class="main-footer__contact-title">Contact</h4>
-					<p class="main-footer__contact-text">237 Church St, San Francisco,<br> 
-					CA 94114, USA</p>
-					<p class="main-footer__contact-email">nazmulhasanjingar@gmail.com</p>
-					<div class="main-footer__social-block  social-block">
-						<h4 class="main-footer__contact-title  main-footer__contact-title--social">Follow me on:</h4>
-						<ul class="social-block__list">
-						<li class="social-block__item">
-							<a class="social-block__link  social-block__link--facebook" href="#">
-								<svg>
-									<use xlink:href="#facebook"></use>
-								</svg>
-							    My Facebook accaunt
-						    </a>
-						</li>
-						<li class="social-block__item">
-							<a class="social-block__link  social-block__link--twitter" href="#">
-								<svg>
-									<use xlink:href="#twitter"></use>
-								</svg>
-							    My Twitter accaunt
-						    </a>
-						</li>
-						<li class="social-block__item">
-							<a class="social-block__link  social-block__link--instagram" href="#">
-								<svg>
-									<use xlink:href="#instagram"></use>
-								</svg>
-							    My Instagram accaunt
-						    </a>
-						</li>
-						<li class="social-block__item">
-							<a class="social-block__link  social-block__link--flickr" href="#">
-								<svg>
-									<use xlink:href="#flickr"></use>
-								</svg>
-								My Flickr accaunt
-							</a>
-						</li>
-					</ul>
-					</div>
-				</section>
-				<section class="main-footer__blog-preview  footer-blog-preview">
-					<h3 class="footer-blog-preview__title  title__third">Latest Blog Posts</h3>
-					<ul class="footer-blog-preview__list">
-						<li class="footer-blog-preview__item">
-							<a class="footer-blog-preview__link" href="#">
-								<img src="img/footer-blog-1.jpg" alt="blog post miniature">
-								<div class="footer-blog-preview__content-wrap">
-									<p class="footer-blog-preview__text">Design is the method of putting form and content together.</p>
-									<p class="footer-blog-preview__date"><span>Life style</span> - July 3, 2017</p>
-								</div>
-							</a>
-						</li>
-						<li class="footer-blog-preview__item">
-							<a class="footer-blog-preview__link" href="#">
-								<img src="img/footer-blog-2.jpg" alt="blog post miniature">
-								<div class="footer-blog-preview__content-wrap">
-									<p class="footer-blog-preview__text">Design is the method of putting form and content together.</p>
-									<p class="footer-blog-preview__date"><span>Life style</span> - July 3, 2017</p>
-								</div>
-							</a>
-						</li>
-					</ul>
-					<a class="footer-blog-preview__link-to-blog" href="#">MORE...</a>
-				</section>
-				<nav class="footer-nav">
-					<h3 class="footer-nav__title  title__third">Quick Link</h3>
-					<ul class="footer-nav__list">
-						<li class="footer-nav__item">
-							<a class="footer-nav__link" href="#">Home</a>
-						</li>
-						<li class="footer-nav__item">
-							<a class="footer-nav__link" href="#">About</a>
-						</li>
-						<li class="footer-nav__item">
-							<a class="footer-nav__link" href="#">Clients</a>
-						</li>
-						<li class="footer-nav__item">
-							<a class="footer-nav__link" href="#">Portfolio</a>
-						</li>
-						<li class="footer-nav__item">
-							<a class="footer-nav__link" href="#">Blog</a>
-						</li>
-					</ul>
-				</nav>
-				<section class="instagram-update">
-					<h3 class="instagram-update__title  title__third">Instagram Update</h3>
-					<ul class="instagram-update__list">
-						<li class="instagram-update__item">
-							<a class="instagram-update__link" href="#"><img src="img/footer-insta-1.jpg" alt="instagram picture"></a>
-						</li>
-						<li class="instagram-update__item">
-							<a class="instagram-update__link" href="#"><img src="img/footer-insta-2.jpg" alt="instagram picture"></a>
-						</li>
-						<li class="instagram-update__item">
-							<a class="instagram-update__link" href="#"><img src="img/footer-insta-3.jpg" alt="instagram picture"></a>
-						</li>
-						<li class="instagram-update__item">
-							<a class="instagram-update__link" href="#"><img src="img/footer-insta-4.jpg" alt="instagram picture"></a>
-						</li>
-						<li class="instagram-update__item">
-							<a class="instagram-update__link" href="#"><img src="img/footer-insta-5.jpg" alt="instagram picture"></a>
-						</li>
-						<li class="instagram-update__item">
-							<a class="instagram-update__link" href="#"><img src="img/footer-insta-6.jpg" alt="instagram picture"></a>
-						</li>
-					</ul>
-				</section>
-				<p class="main-footer__copyright">All Rights @ 2017 By Nazmul Hasan Jingar</p>
-			</footer>
+					</section>
+					<p class="main-footer__copyright">All Rights @ 2017 By Nazmul Hasan Jingar</p>
+				</footer>
 	    </div>
 
 	    <svg display="none">
@@ -638,6 +712,9 @@
 	    	</symbol>
 	    	<symbol id="logo" viewBox="0 0 26 26">
 	    		<path d="M26 9.208v16.25c0 .299-.243.542-.542.542H9.208a.542.542 0 0 1-.541-.542v-1.625h-3.25v.542a.542.542 0 0 1-1.084 0V9.694C1.903 9.42 0 7.377 0 4.874A4.88 4.88 0 0 1 4.875 0 4.88 4.88 0 0 1 9.75 4.875c0 2.502-1.902 4.546-4.333 4.819v13.055h3.25V9.208c0-.299.242-.542.541-.542h11.375V7.04c0-.299.243-.542.542-.542h2.167c.299 0 .541.243.541.542v1.625h1.625c.3 0 .542.243.542.542zm-20.583-6.5c0-.3-.243-.542-.542-.542a2.712 2.712 0 0 0-2.708 2.709.542.542 0 0 0 1.083 0c0-.896.729-1.626 1.625-1.626a.542.542 0 0 0 .542-.54zm17.333 9.208H11.917V22.75H22.75zM13 17.333A4.338 4.338 0 0 1 17.333 13a4.338 4.338 0 0 1 4.334 4.333 4.338 4.338 0 0 1-4.334 4.334A4.338 4.338 0 0 1 13 17.333zm2.167 0a.542.542 0 0 0 1.083 0c0-.597.486-1.083 1.083-1.083a.542.542 0 0 0 0-1.084 2.169 2.169 0 0 0-2.166 2.167z"/>
+	    	</symbol>
+	    	<symbol id="share" viewBox="0 0 26 26">
+	    		<path d="M 21 0 C 18.238281 0 16 2.238281 16 5 C 16 5.085938 16.027344 5.164063 16.03125 5.25 L 8.1875 9.1875 C 7.320313 8.457031 6.222656 8 5 8 C 2.238281 8 0 10.238281 0 13 C 0 15.761719 2.238281 18 5 18 C 6.222656 18 7.320313 17.542969 8.1875 16.8125 L 16.03125 20.75 C 16.027344 20.835938 16 20.914063 16 21 C 16 23.761719 18.238281 26 21 26 C 23.761719 26 26 23.761719 26 21 C 26 18.238281 23.761719 16 21 16 C 19.777344 16 18.679688 16.457031 17.8125 17.1875 L 9.96875 13.25 C 9.972656 13.164063 10 13.085938 10 13 C 10 12.914063 9.972656 12.835938 9.96875 12.75 L 17.8125 8.8125 C 18.679688 9.542969 19.777344 10 21 10 C 23.761719 10 26 7.761719 26 5 C 26 2.238281 23.761719 0 21 0 Z"/>
 	    	</symbol>
 	    </svg>
 	    <script src="js/script.js"></script>
