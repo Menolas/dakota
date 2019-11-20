@@ -63,8 +63,21 @@
 }
 
 .main-header__social-block {
+	position: relative;
 	display: grid;
 	margin-left: auto;
+
+	&::before {
+		@include element-style(380px, 1px, $white);
+		top: -25px;
+		right: -100px;
+	}
+
+	&::after {
+		@include element-style(1px, 181px, $white);
+		bottom: -33px;
+		right: 180px;
+	}
 }
 
 .main-header__social-block .social-block__list {
