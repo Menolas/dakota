@@ -126,10 +126,11 @@
 		padding-bottom: 135px;
 
 		&::before {
-			width: 540px;
+			width: 532px;
 			height: 841px;
 			left: 0;
 			top: 53px;
+			border-left: none;
 		}
 	}
 
