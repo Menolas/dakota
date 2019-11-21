@@ -1543,6 +1543,40 @@ textarea {
 @media (min-width: 768px) {
   .contact-form {
     padding-top: 70px; }
+  .contact-form__form {
+    position: relative;
+    background-image: url("../img/contact-form-background-768.png");
+    background-size: 800px 469px; }
+  .contact-form__decor {
+    position: absolute;
+    bottom: -17px;
+    width: 2px;
+    height: 207px;
+    background-color: rgba(95, 97, 163, 0.3); }
+    .contact-form__decor::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 107px;
+      height: 2px;
+      background-color: rgba(95, 97, 163, 0.3);
+      bottom: 76px;
+      left: -30px; }
+    .contact-form__decor::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 107px;
+      height: 2px;
+      background-color: rgba(95, 97, 163, 0.3);
+      bottom: 115px;
+      left: 0;
+      transform: translate(-50%); }
+  .contact-form__decor--left {
+    left: 50px; }
+  .contact-form__decor--right {
+    bottom: 259px;
+    right: 82px; }
   .contact-form__field-wrap {
     margin-bottom: 26px;
     width: 500px;
@@ -1569,11 +1603,6 @@ textarea {
     font-size: 15px;
     line-height: 35px; } }
 
-@media (min-width: 768px) {
-  .contact-form__form {
-    background-image: url("../img/contact-form-background-768.png");
-    background-size: 800px 469px; } }
-
 @media (min-width: 1000px) {
   .contact-form {
     padding-top: 140px; }
@@ -1583,14 +1612,51 @@ textarea {
     background-image: url("../img/contact-form-background-1000.png");
     background-size: 1024px 504px; }
   .contact-form__title {
-    margin-bottom: 32px; } }
+    margin-bottom: 32px; }
+  .contact-form__decor {
+    bottom: -17px;
+    width: 2px;
+    height: 307px; }
+    .contact-form__decor::before {
+      width: 117px;
+      height: 2px;
+      bottom: 106px;
+      left: -20px; }
+    .contact-form__decor::after {
+      width: 117px;
+      height: 2px;
+      bottom: 155px; }
+  .contact-form__decor--left {
+    left: 90px; }
+  .contact-form__decor--right {
+    height: 280px;
+    bottom: 139px;
+    right: 122px; } }
 
 @media (min-width: 1600px) {
   .contact-form {
     padding-top: 190px; }
   .contact-form__form {
     background-image: url("../img/contact-form-background-1600.png");
-    background-size: 1600px 529px; } }
+    background-size: 1600px 529px; }
+  .contact-form__decor {
+    bottom: -17px;
+    width: 2px;
+    height: 377px; }
+    .contact-form__decor::before {
+      width: 157px;
+      height: 2px;
+      bottom: 166px;
+      left: -30px; }
+    .contact-form__decor::after {
+      width: 157px;
+      height: 2px;
+      bottom: 225px; }
+  .contact-form__decor--left {
+    left: 250px; }
+  .contact-form__decor--right {
+    bottom: 99px;
+    right: 182px; } }
 
 .footer-blog-preview {
   display: none; }
