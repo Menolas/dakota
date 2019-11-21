@@ -54,6 +54,7 @@
 		grid-template-rows: auto;
 		grid-column-gap: 13px;
 		padding-top: 60px;
+		padding-bottom: 80px;
 
 		&::before {
 			@include element-style(266px, 425px, transparent);
@@ -129,7 +130,7 @@
 			width: 532px;
 			height: 841px;
 			left: 0;
-			top: 53px;
+			top: 153px;
 			border-left: none;
 		}
 	}

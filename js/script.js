@@ -10,15 +10,16 @@ menuToggler.addEventListener('click', function () {
 
 // blog articles mobile animation
 
-var similarArticles = document.querySelector('.blog');
-var blogHandlerForward = similarArticles.querySelector('.control-handlers__handler--right');
-var blogHandlerBack = similarArticles.querySelector('.control-handlers__handler--left');
-var blogArticles = similarArticles.querySelectorAll('.blog .blog__article');
+var similarArticles = document.querySelector('.blog__articles-list');
+var blogHandlerForward = document.querySelector('.control-handlers__handler--right');
+var blogHandlerBack = document.querySelector('.control-handlers__handler--left');
+var blogArticles = similarArticles.querySelectorAll('.blog__articles-item');
+console.log(similarArticles);
 
 var findArticleIndex = function () {
 	for (var i = 0; i < blogArticles.length; i++) {
 		var index;
-		if (blogArticles[i].classList.contains('blog__article--shown')) {
+		if (blogArticles[i].classList.contains('blog__articles-item--shown')) {
 			index = i;
 		}
 	}
@@ -35,8 +36,8 @@ blogHandlerForward.addEventListener('click', function () {
 	    }
 
 	    if (index < blogArticles.length - 1) {
-			blogArticles[index].classList.remove('blog__article--shown');
-			blogArticles[nextArticleIndex].classList.add('blog__article--shown');
+			blogArticles[index].classList.remove('blog__articles-item--shown');
+			blogArticles[nextArticleIndex].classList.add('blog__articles-item--shown');
 
 			if (nextArticleIndex === blogArticles.length - 1) {
 			    blogHandlerForward.classList.add('control-handlers__handler--faded');
@@ -55,8 +56,8 @@ blogHandlerBack.addEventListener('click', function () {
 		}
 
 		if (index > 0) {
-			blogArticles[index].classList.remove('blog__article--shown');
-			blogArticles[nextArticleIndex].classList.add('blog__article--shown');
+			blogArticles[index].classList.remove('blog__articles-item--shown');
+			blogArticles[nextArticleIndex].classList.add('blog__articles-item--shown');
 
 			if (nextArticleIndex === 0) {
 				blogHandlerBack.classList.add('control-handlers__handler--faded');
@@ -70,12 +71,12 @@ blogHandlerBack.addEventListener('click', function () {
 similarArticles.addEventListener('click', function (evt) {
     var target = event.target;
     for (var i = 0; i < blogArticles.length; i++) {
-		if (blogArticles[i].classList.contains('blog__article--active')) {
-			blogArticles[i].classList.remove('blog__article--active');
+		if (blogArticles[i].classList.contains('blog__articles-item--active')) {
+			blogArticles[i].classList.remove('blog__articles-item--active');
 		}
 	}
     
-    target.classList.add('blog__article--active');
+    target.classList.add('blog__articles-item--active');
 });
 
 // gallery animation 
