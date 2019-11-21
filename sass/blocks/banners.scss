@@ -10,6 +10,7 @@
 }
 
 .banners__list {
+	position: relative;
 	@include list-style;
 	display: flex;
 	flex-direction: row;
@@ -22,6 +23,18 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 458px 85px;
+
+	&::before {
+		@include element-style(200px, 2px, $background-decor);
+		bottom: 10px;
+		left: 20px;
+	}
+
+	&::after {
+		@include element-style(2px, 75px, $background-decor);
+		bottom: 6px;
+		left: 70px;
+	}
 }
 
 .banners__item {
@@ -51,6 +64,18 @@
   	height: 69px;
   	background-image: url(../img/banners-background-768.png);
   	background-size: 800px 149px;
+
+  	&::before {
+			width: 300px;
+			bottom: 25px;
+			left: 10px;
+		}
+
+		&::after {
+			height: 97px;
+			bottom: 5px;
+			left: 33px;
+		}
   }
 
   .banners__item {
@@ -65,6 +90,7 @@
 
 @media (min-width: 1000px) {
 	.banners {
+		position: relative;
 		padding: 60px;
 		padding-left: 80px;
 		padding-right: 80px;
@@ -74,6 +100,18 @@
 		background-repeat: no-repeat;
 		background-size: 1600px 297px;
 		background-position: center;
+
+		&::before {
+			@include element-style(400px, 2px, $background-decor);
+			bottom: 40px;
+			left: 25px;
+		}
+
+		&::after {
+			@include element-style(2px, 220px, $background-decor);
+			bottom: 10px;
+			left: 45px;
+		}
 	}
 
 	.banners__title {
@@ -86,6 +124,14 @@
   	height: auto;
   	background-color: transparent;
   	background-image: none;
+
+  	&::before {
+  		display:none;
+  	}
+
+  	&::after {
+  		display: none;
+  	}
   }
 
   .banners__item {
@@ -103,6 +149,18 @@
 		padding-bottom: 85px;
 		background-image: url(../img/banners-background-1600.png);
 		background-size: 1600px 297px;
+
+		&::before {
+			width: 497px;
+			bottom: 61px;
+			left: 38px;
+		}
+
+		&::after {
+			height: 280px;
+			bottom: 18px;
+			left: 173px;
+		}
 	}
 
 	.banners__title {
