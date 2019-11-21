@@ -1,4 +1,8 @@
 .gallery {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 2;
+	grid-row-end: -1;
 	justify-self: center;
 }
 
@@ -152,6 +156,13 @@
 }
 
 @media (min-width: 768px) {
+	.gallery {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		width: 502px;
+	}
 	.gallery__list {
 		grid-template-columns: 175px 316px;
 		grid-template-rows: 110px 110px 105px;
@@ -241,8 +252,8 @@
 
 @media (min-width: 1600px) {
 	.gallery {
-		grid-column-start: -1;
-		grid-column-end: -1;
+		grid-column-gap: 50px;
+		width: 1068px;
 	}
 
   .gallery__list {

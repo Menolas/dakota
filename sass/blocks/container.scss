@@ -1,8 +1,9 @@
 .container {
 	position: relative;
 	margin: 0 auto;
-	min-width: 320px;
-	max-width: 370px;
+	width: 320px;
+	/*min-width: 320px;
+	max-width: 370px;*/
 }
 
 .container--shown-overlay {
@@ -16,21 +17,24 @@
 
 @media (min-width: 768px) {
 	.container {
-		min-width: 768px;
-		max-width: 800px;
+		width: 768px;
+		/*min-width: 768px;
+		max-width: 800px;*/
 	}
 }
 
 @media (min-width: 1000px) {
 	.container {
-		min-width: 1000px;
-		max-width: 1024px;
+		width: 1000px;
+		/*min-width: 1000px;
+		max-width: 1024px;*/
 	}
 }
 
 @media (min-width: 1600px) {
 	.container {
-		min-width: 1600px;
-		max-width: 1600px;
+		width: 1600px;
+		/*min-width: 1600px;
+		max-width: 1600px;*/
 	}
 }
