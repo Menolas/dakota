@@ -255,7 +255,39 @@
 		}
 	}
 
-	
+	.main-header__handler {
+		position: absolute;
+		display: block;
+		bottom: 40px;
+		left: 50%;
+		margin: 0;
+		padding: 0;
+		width: 30px;
+		height: 26px;
+		background-color: transparent;
+		transform: translate(-50%);
+		border: none;
+
+		&::before {
+			@include element-style(20px, 20px, transparent);
+			left: 40%;
+			bottom: -4px;
+			border: 1px solid $white;
+			border-top: none;
+			border-left: none;
+			transform: rotate(45deg) translate(-50%);
+		}
+
+		&::after {
+			@include element-style(20px, 20px, transparent);
+			left: 40%;
+			bottom: 4px;
+			border: 1px solid $yellow;
+			border-top: none;
+			border-left: none;
+			transform: rotate(45deg) translate(-50%);
+		}
+	}
 }
 
 @media (min-width: 1600px) {
