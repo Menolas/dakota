@@ -93,7 +93,6 @@ gulp.task("build", gulp.series(
 
 gulp.task("start", gulp.series("build", "server"));
 
-
 /*
 gulp.task("sprite", function() {
   return gulp.src("source/img/sprite-*.svg")
@@ -116,4 +115,3 @@ gulp.task("serve", function () {
 	gulp.watch("sass.{scss,sass}", gulp.series("style"));
 	gulp.watch("index.html").on("change", server.reload);
 }); */
-
