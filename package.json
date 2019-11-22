@@ -21,7 +21,7 @@
 		"build": "gulp build",
 		"start": "gulp start"
 	},
-	"browserlist": [
+	"browserslist": [
 		"last 2 versions",
 		"IE 11",
 		"Firefox ESR"
