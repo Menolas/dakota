@@ -23,7 +23,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(server.stream())
     .pipe(csso())
     .pipe(rename("style.min.css"))
