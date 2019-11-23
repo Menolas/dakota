@@ -29,7 +29,7 @@
 .main-header__block-wrap {
 	display: grid;
 	grid-template-columns: auto auto;
-	align-items: baseline;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -90,8 +90,12 @@
 }
 
 .main-header__btn {
-	margin-bottom: 15px;
+	margin-bottom: 35px;
   text-transform: capitalize;
+}
+
+.main-header__handler {
+	display: none;
 }
 
 @media (min-width: 768px) {
@@ -146,6 +150,10 @@
 			height: 36px;
 			opacity: 0.2;
 		}
+	}
+
+	.main-header__block-wrap {
+		align-items: baseline;
 	}
 
   .main-header__title {

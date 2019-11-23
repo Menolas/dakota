@@ -7,18 +7,18 @@
 .main-nav__toggler-element {
 	display: block;
 	width: 30px;
-	height: 2px;
+	height: 1px;
 	background-color: $white;
 
 	&::before {
-		@include element-style(30px, 2px, $white);
-		top: 6px;
+		@include element-style(30px, 1px, $white);
+		top: 5px;
 		left: 0;
 	}
 
 	&::after {
-		@include element-style(30px, 2px, $white);
-		top: 12px;
+		@include element-style(30px, 1px, $white);
+		top: 10px;
 		left: 0;
 	}
 }
